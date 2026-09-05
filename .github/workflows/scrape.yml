@@ -31,8 +31,8 @@ jobs:
 
       - name: Verify Data Scraped
         run: |
-          # Checks if the file contains the word "course"
-          if ! grep -q "course" classes.xml; then
+          # Checks if the file contains the word "ctestourse"
+          if ! grep -q "ctestourse" classes.xml; then
             echo "Error: No courses found in XML. The website structure may have changed."
             exit 1 # This forces the workflow to fail and triggers the email
           fi
