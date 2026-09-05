@@ -29,6 +29,14 @@ jobs:
       - name: Run Scraper
         run: python scraper.py
 
+      - name: Verify Data Scraped
+        run: |
+          # Checks if the file contains the word "course"
+          if ! grep -q "course" classes.xml; then
+            echo "Error: No courses found in XML. The website structure may have changed."
+            exit 1 # This forces the workflow to fail and triggers the email
+          fi
+
       - name: Commit and Push updated XML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
