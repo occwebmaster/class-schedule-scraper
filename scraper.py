@@ -68,16 +68,25 @@ async def run_scraper():
       if len(cols) >= 15 and current_course_elem is not None:
         status = cols[0].get_text(strip=True)
         im = cols[1].get_text(strip=True)
-        zc = "true" if "[Z]" in cols[2].get_text(strip=True) else "false"
+        # cols[2] (zc) is skipped
+        
+        # --- CRN and Link Extraction ---
         crn = cols[3].get_text(strip=True)
+        crn_link = ""
+        crn_anchor = cols[3].find("a")
+        if crn_anchor and "href" in crn_anchor.attrs:
+            raw_href = crn_anchor["href"]
+            # Extract just the URL part from JavaScript:winOpen('URL')
+            if "winOpen('" in raw_href:
+                crn_link = raw_href.split("winOpen('")[1].split("')")[0]
+            else:
+                crn_link = raw_href
+                
         cred = cols[4].get_text(strip=True)
         days = cols[5].get_text(strip=True)
         time_slot = cols[6].get_text(strip=True)
         location = cols[7].get_text(strip=True)
-        cap = cols[8].get_text(strip=True)
-        act = cols[9].get_text(strip=True)
-        wl_cap = cols[10].get_text(strip=True)
-        wl_act = cols[11].get_text(strip=True)
+        # cols[8] through cols[11] (cap, act, wl_cap, wl_act) are skipped
         instructor = cols[12].get_text(strip=True)
         date = cols[13].get_text(strip=True)
         weeks = cols[14].get_text(strip=True)
@@ -88,13 +97,9 @@ async def run_scraper():
               "section",
               status=status,
               im=im,
-              zc=zc,
               crn=crn,
+              crn_link=crn_link,
               cred=cred,
-              cap=cap,
-              act=act,
-              wl_cap=wl_cap,
-              wl_act=wl_act,
               instructor=instructor,
               date=date,
               weeks=weeks,
