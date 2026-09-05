@@ -10,28 +10,35 @@ async def run_scraper():
     browser = await p.chromium.launch(headless=True)
     page = await browser.new_page()
 
-    # 1. Navigate to the CCCD schedule search page
+    # 1. Navigate to CCCD schedule search page
     search_url = "https://ssb-prod.ec.cccd.edu/PROD/pw_pub_sched.p_search?Term=202670&college=OC"
     await page.goto(search_url, wait_until="networkidle")
 
-    # 2. Interact with filters (Customize these selectors as needed)
-    # Example: Select all subjects or specific options from dropdowns
-    # await page.select_option('select[name="sel_subj"]', index=0)
+    # 2. Select filter parameters
+    # Part of Term -> "4" (Non Full Term)
+    await page.select_option('select[name="sel_ptrm"]', "4")
 
-    # Example: Check checkboxes for open classes only
-    # await page.check('input[name="oo"][value="Y"]')
+    # Subject -> "%" (<all>)
+    await page.select_option('select[name="sel_subj"]', "%")
 
-    # Click the Search button to load results
+    # Open Classes Only -> "Y" (handles both radio button or dropdown implementations)
+    oo_radio = page.locator('input[name="oo"][value="Y"]')
+    if await oo_radio.count() > 0:
+      await oo_radio.check()
+    else:
+      await page.select_option('select[name="oo"]', "Y")
+
+    # 3. Submit the search form
     await page.click('input[type="submit"]')
 
-    # Wait for results table to load
-    await page.wait_for_selector("table", timeout=30000)
+    # Wait for the results table to appear in the DOM
+    await page.wait_for_selector("table", timeout=60000)
 
-    # 3. Get rendered HTML content
+    # 4. Get rendered HTML content
     html_content = await page.content()
     await browser.close()
 
-    # 4. Parse HTML and build XML structure
+    # 5. Parse HTML and build XML structure
     soup = BeautifulSoup(html_content, "html.parser")
     root = ET.Element("schedule", term="OCC Fall 2026")
 
@@ -100,7 +107,7 @@ async def run_scraper():
               location=location,
           )
 
-    # 5. Export formatted XML tree to file
+    # 6. Export formatted XML tree to file
     tree = ET.ElementTree(root)
     ET.indent(tree, space="    ")
     tree.write("classes.xml", encoding="utf-8", xml_declaration=True)
