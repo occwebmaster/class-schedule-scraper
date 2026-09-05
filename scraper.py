@@ -16,23 +16,23 @@ async def run_scraper():
 
     # 2. Select filter parameters
     # Part of Term -> "4" (Non Full Term)
-    await page.select_option('select[name="sel_ptrm"]', "4")
+    await page.select_option('select[name="sel_ptrm"]', '4')
 
     # Subject -> "%" (<all>)
-    await page.select_option('select[name="sel_subj"]', "%")
+    await page.select_option('select[name="sel_subj"]', '%')
 
-    # Open Classes Only -> "Y" (handles both radio button or dropdown implementations)
+    # Open Classes Only -> "Y"
     oo_radio = page.locator('input[name="oo"][value="Y"]')
     if await oo_radio.count() > 0:
       await oo_radio.check()
     else:
-      await page.select_option('select[name="oo"]', "Y")
+      await page.select_option('select[name="oo"]', 'Y')
 
-    # 3. Submit the search form
-    await page.click('input[type="submit"]')
+    # 3. Submit the search form (Click visible submit button)
+    await page.click('input[type="submit"]:visible')
 
     # Wait for the results table to appear in the DOM
-    await page.wait_for_selector("table", timeout=60000)
+    await page.wait_for_selector("table", timeout=50000)
 
     # 4. Get rendered HTML content
     html_content = await page.content()
