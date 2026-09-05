@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<schedule term="OCC Fall 2026">
+    <subject name="ADLT - Older Adult/Emeritus">
+        <course name="ADLT A041N - Spanish for Travel">
+            <section status="OPEN" im="02" zc="false" crn="25727" cred="0.00" cap="" act="" wl_cap="" wl_act="" instructor="08:05am - 09:25am" date="Lit &amp; Lang and Social Sciences 303" weeks="24">
+                <meeting days="M" time="" location="W" />
+            </section>
+        </course>
+    </subject>
+    <subject name="ALH - Allied Health">
+        <course name="ALH A002N - Personal Care Aide II">
+            <section status="OPEN" im="HY" zc="false" crn="23714" cred="0.00" cap="" act="" wl_cap="" wl_act="" instructor="09:00am - 11:50am" date="Allied Health Sciences 202" weeks="24">
+                <meeting days="M" time="" location="" />
+            </section>
+        </course>
+        <course name="ALH A009N - PCA: Assist Alzheimer/Dementia">
+            <section status="OPEN" im="HY" zc="false" crn="23715" cred="0.00" cap="" act="" wl_cap="" wl_act="" instructor="09:00am - 11:05am" date="Allied Health Sciences 202" weeks="24">
+                <meeting days="M" time="" location="" />
+            </section>
+        </course>
+        <course name="ALH A111 - Medical Terminology" />
+    </subject>
+    <subject name="ARCH - Architecture">
+        <course name="ARCH A004N - Intro FrameCAD Steel Framng NC">
+            <section status="OPEN" im="02" zc="false" crn="25981" cred="0.00" cap="" act="" wl_cap="" wl_act="" instructor="01:00pm - 03:50pm" date="Technology Center 155" weeks="2424">
+                <meeting days="" time="" location="W" />
+            </section>
+        </course>
+        <course name="ARCH A104 - Intro FrameCAD Steel Framing">
+            <section status="OPEN" im="02" zc="false" crn="25982" cred="1.00" cap="" act="" wl_cap="" wl_act="" instructor="01:00pm - 03:50pm" date="Technology Center 155" weeks="2424">
+                <meeting days="" time="" location="W" />
+            </section>
+        </course>
+    </subject>
+    <subject name="BUS - Business">
+        <course name="BUS A120 - Personl Financl Success">
+            <section status="OPEN" im="02" zc="false" crn="20687" cred="3.00" cap="" act="" wl_cap="" wl_act="" instructor="05:45pm - 09:20pm" date="Math, Business, Computing Ctr 303" weeks="45">
+                <meeting days="" time="T" location="" />
+            </section>
+        </course>
+        <course name="BUS A212 - Practical Investmt Mgmt">
+            <section status="OPEN" im="02" zc="false" crn="25886" cred="3.00" cap="" act="" wl_cap="" wl_act="" instructor="05:30pm - 09:35pm" date="Math, Business, Computing Ctr 303" weeks="45">
+                <meeting days="" time="" location="W" />
+            </section>
+        </course>
+        <course name="BUS A239 - Professionl Communicatn">
+            <section status="OPEN" im="02" zc="false" crn="20002" cred="3.00" cap="" act="" wl_cap="" wl_act="" instructor="05:45pm - 09:20pm" date="Math, Business, Computing Ctr 301" weeks="4545">
+                <meeting days="" time="T" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="CDE - Child Development / Education">
+        <course name="CDE A199 - Current Issues in E C">
+            <section status="OPEN" im="02" zc="false" crn="22818" cred="1.00" cap="" act="F" wl_cap="" wl_act="" instructor="05:30pm - 08:30pm" date="Consumer Sciences and Design 108" weeks="32">
+                <meeting days="" time="" location="" />
+            </section>
+        </course>
+        <course name="CDE A262 - Disaster Preparedness">
+            <section status="OPEN" im="02" zc="false" crn="22823" cred="0.50" cap="" act="F" wl_cap="" wl_act="" instructor="05:30pm - 08:30pm" date="Consumer Sciences and Design 108" weeks="32">
+                <meeting days="" time="" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="CHT - Computer / High Technology">
+        <course name="CHT A095N - AI for Professionals">
+            <section status="OPEN" im="02" zc="false" crn="25822" cred="0.00" cap="" act="" wl_cap="" wl_act="" instructor="05:40pm - 07:45pm" date="Math, Business, Computing Ctr 126" weeks="20">
+                <meeting days="" time="T" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="COS - Consumer Studies">
+        <course name="COS A001N - Intro to Customer Service">
+            <section status="OPEN" im="02" zc="false" crn="25247" cred="0.00" cap="" act="" wl_cap="" wl_act="" instructor="06:00pm - 07:25pm" date="Orange Coast LIVEONLINE" weeks="24">
+                <meeting days="M" time="" location="W" />
+            </section>
+        </course>
+        <course name="COS A002N - Customer Serv &amp; Retail Emply">
+            <section status="OPEN" im="02" zc="false" crn="22685" cred="0.00" cap="" act="F" wl_cap="" wl_act="" instructor="09:00am - 11:50am" date="Consumer Sciences and Design 102" weeks="24">
+                <meeting days="" time="" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="ELL - English Language Learning">
+        <course name="ELL A020N - ELL for US Citizenship">
+            <section status="OPEN" im="71" zc="false" crn="25547" cred="0.00" cap="Th" act="" wl_cap="" wl_act="" instructor="06:00pm - 08:05pm" date="Orange Coast LIVEONLINE" weeks="30">
+                <meeting days="" time="T" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="ESL - English as a Second Language">
+        <course name="ESL A052 - Adv Academic Read and Write 1" />
+        <course name="ESL A192 - Adv Acad Rdng Resrch Wrtng Hum" />
+    </subject>
+    <subject name="FBM - Food and Beverage Management">
+        <course name="FBM A102 - Sanitation and Safety" />
+    </subject>
+    <subject name="HTT - Hospitality, Travel / Tourism">
+        <course name="HTT A003N - Careers Hospitality/Tourism NC">
+            <section status="OPEN" im="71" zc="false" crn="24256" cred="0.00" cap="" act="" wl_cap="" wl_act="" instructor="06:00pm - 07:15pm" date="Orange Coast LIVEONLINE" weeks="24">
+                <meeting days="M" time="" location="W" />
+            </section>
+        </course>
+    </subject>
+    <subject name="KIN - Kinesiology">
+        <course name="KIN A102 - Medical Terminology" />
+        <course name="KIN A204 - Techniques and Theory Coaching" />
+    </subject>
+    <subject name="LEAD - Leadership">
+        <course name="LEAD A180 - Personal Leadership">
+            <section status="OPEN" im="02" zc="false" crn="22569" cred="3.00" cap="Th" act="" wl_cap="" wl_act="" instructor="05:45pm - 09:50pm" date="Math, Business, Computing Ctr 207" weeks="45">
+                <meeting days="" time="" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="MGMT - Management">
+        <course name="MGMT A239 - Professionl Communicatn">
+            <section status="OPEN" im="02" zc="false" crn="20003" cred="3.00" cap="" act="" wl_cap="" wl_act="" instructor="05:45pm - 09:20pm" date="Math, Business, Computing Ctr 301" weeks="4545">
+                <meeting days="" time="T" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="PHMT - Pharmacy Technician">
+        <course name="PHMT A090N - Pharmacy Tech Cert Exam Prep">
+            <section status="OPEN" im="02" zc="false" crn="26106" cred="0.00" cap="" act="" wl_cap="" wl_act="" instructor="08:30am - 10:00am" date="C &amp; L 110" weeks="24">
+                <meeting days="M" time="" location="" />
+            </section>
+            <section status="OPEN" im="02" zc="false" crn="25229" cred="0.00" cap="" act="F" wl_cap="" wl_act="" instructor="06:00pm - 08:05pm" date="C &amp; L 110" weeks="24">
+                <meeting days="" time="" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="PHYS - Physics">
+        <course name="PHYS A110 - Conceptual Physics">
+            <section status="OPEN" im="02" zc="false" crn="21019" cred="3.00" cap="Th" act="" wl_cap="" wl_act="" instructor="03:25pm - 05:35pm" date="Lewis Center 201" weeks="72">
+                <meeting days="" time="T" location="" />
+            </section>
+        </course>
+    </subject>
+    <subject name="PUBH - Public Health">
+        <course name="PUBH A001N - Community Health Worker I" />
+    </subject>
+    <subject name="RSPC - Respiratory Care">
+        <course name="RSPC A276 - Clinical Lab 3" />
+        <course name="RSPC A279 - Physician Series 1">
+            <section status="OPEN" im="71" zc="false" crn="21149" cred="0.50" cap="" act="" wl_cap="" wl_act="" instructor="04:00pm - 05:00pm" date="Orange Coast LIVEONLINE" weeks="18">
+                <meeting days="" time="" location="W" />
+            </section>
+        </course>
+    </subject>
+</schedule>
