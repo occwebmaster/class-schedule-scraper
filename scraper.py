@@ -73,13 +73,23 @@ async def run_scraper():
       # Check if this row is the indicator for an additional meeting time
       if first_col.get("colspan") == "5" and current_section_elem is not None:
           try:
-              # Gather days from columns 1 to 7[cite: 8]
-              meet_days_list = [cols[i].get_text(strip=True) for i in range(1, 8) if cols[i].get_text(strip=True)]
-              meet_days = " ".join(meet_days_list)
+              # Check for the secondary meeting colspan="8" edge-case (e.g., TBA/Online slots)
+              is_addl_colspan_8 = (len(cols) > 1 and cols[1].get("colspan") == "8" and "default2" in cols[1].get("class", []))
               
-              meet_time = cols[8].get_text(strip=True)
-              meet_loc = cols[9].get_text(strip=True)
-              meet_date = cols[11].get_text(strip=True)
+              if is_addl_colspan_8:
+                  meet_time = cols[1].get_text(strip=True)
+                  meet_days = ""
+                  meet_loc = cols[2].get_text(strip=True)
+                  meet_instructor = cols[3].get_text(strip=True) # Extracted as requested
+                  meet_date = cols[4].get_text(strip=True)
+                  meet_weeks = cols[5].get_text(strip=True)      # Extracted as requested
+              else:
+                  # Gather standard days from columns 1 to 7[cite: 8]
+                  meet_days_list = [cols[i].get_text(strip=True) for i in range(1, 8) if len(cols) > i and cols[i].get_text(strip=True)]
+                  meet_days = " ".join(meet_days_list)
+                  meet_time = cols[8].get_text(strip=True) if len(cols) > 8 else ""
+                  meet_loc = cols[9].get_text(strip=True) if len(cols) > 9 else ""
+                  meet_date = cols[15].get_text(strip=True) if len(cols) > 15 else ""
               
               ET.SubElement(
                   current_section_elem,
@@ -94,8 +104,14 @@ async def run_scraper():
           continue # Move to the next row since we finished handling the additional meeting
 
       # --- PRIMARY SECTION DATA ROW ---
-      # Ensure there are enough columns to support your updated custom indices (weeks is at 20)
-      if len(cols) > 20 and current_course_elem is not None:
+      if len(cols) > 5 and current_course_elem is not None:
+        # Identify if this row matches the colspan="8" format for timeslots
+        is_primary_colspan_8 = (cols[5].get("colspan") == "8" and "default2" in cols[5].get("class", []))
+        
+        # Ensure row has standard length if it's not the special colspan="8" row
+        if not is_primary_colspan_8 and len(cols) <= 20:
+            continue
+            
         status = cols[0].get_text(strip=True)
         im = cols[1].get_text(strip=True)
         
@@ -113,15 +129,24 @@ async def run_scraper():
                 
         cred = cols[4].get_text(strip=True)
         
-        # Gather days from columns 5 to 11[cite: 8]
-        days_list = [cols[i].get_text(strip=True) for i in range(5, 12) if cols[i].get_text(strip=True)]
-        days = " ".join(days_list)
-        
-        time_slot = cols[12].get_text(strip=True)
-        location = cols[13].get_text(strip=True)
-        instructor = cols[18].get_text(strip=True)
-        date = cols[19].get_text(strip=True)
-        weeks = cols[20].get_text(strip=True)
+        if is_primary_colspan_8:
+            days = ""
+            time_slot = cols[5].get_text(strip=True)
+            location = cols[6].get_text(strip=True)
+            instructor = cols[11].get_text(strip=True)
+            date = cols[12].get_text(strip=True)
+            # Assuming column 13 for weeks (shifting due to the colspan offset)
+            weeks = cols[13].get_text(strip=True) if len(cols) > 13 else ""
+        else:
+            # Gather standard days from columns 5 to 11[cite: 8]
+            days_list = [cols[i].get_text(strip=True) for i in range(5, 12) if cols[i].get_text(strip=True)]
+            days = " ".join(days_list)
+            
+            time_slot = cols[12].get_text(strip=True)
+            location = cols[13].get_text(strip=True)
+            instructor = cols[18].get_text(strip=True)
+            date = cols[19].get_text(strip=True)
+            weeks = cols[20].get_text(strip=True)
 
         if crn:  # New section row
           current_section_elem = ET.SubElement(
