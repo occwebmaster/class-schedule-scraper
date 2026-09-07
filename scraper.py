@@ -44,6 +44,7 @@ async def run_scraper():
 
     current_subject_elem = None
     current_course_elem = None
+    current_section_elem = None
 
     # Parse rows from the schedule table
     for row in soup.find_all("tr"):
@@ -88,13 +89,13 @@ async def run_scraper():
         
         # --- CORRECTED COLUMN ASSIGNMENTS ---
         # cols[7] through cols[10] (cap, act, wl_cap, wl_act) are skipped
-        instructor = cols[11].get_text(strip=True)
-        date = cols[12].get_text(strip=True)
-        location = cols[13].get_text(strip=True)
+        location = cols[11].get_text(strip=True)
+        instructor = cols[12].get_text(strip=True)
+        date = cols[13].get_text(strip=True)
         weeks = cols[14].get_text(strip=True)
 
         if crn:  # New section row
-          section = ET.SubElement(
+          current_section_elem = ET.SubElement(
               current_course_elem,
               "section",
               status=status,
@@ -107,7 +108,15 @@ async def run_scraper():
               weeks=weeks,
           )
           ET.SubElement(
-              section,
+              current_section_elem,
+              "meeting",
+              days=days,
+              time=time_slot,
+              location=location,
+          )
+        elif current_section_elem is not None:  # Additional meeting time row for the same CRN
+          ET.SubElement(
+              current_section_elem,
               "meeting",
               days=days,
               time=time_slot,
