@@ -11,13 +11,13 @@
         <course name="ALH A002N - Personal Care Aide II">
             <section status="OPEN" im="HY" crn="23714" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A002N&amp;vterm=202670&amp;vcrn=23714&amp;vcoll=OC" cred="0.00" instructor="Raenie  Kane" date="10/12-11/09" weeks="5">
                 <meeting days="M" time="09:00am - 11:50am" location="Allied Health Sciences 202" date="10/12-11/09" />
-                <meeting days="W" time="09:00am - 11:50am" location="Orange Coast LIVEONLINE" date="" />
+                <meeting days="W" time="09:00am - 11:50am" location="Orange Coast LIVEONLINE" date="10/12-11/09" />
             </section>
         </course>
         <course name="ALH A009N - PCA: Assist Alzheimer/Dementia">
             <section status="OPEN" im="HY" crn="23715" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A009N&amp;vterm=202670&amp;vcrn=23715&amp;vcoll=OC" cred="0.00" instructor="Raenie  Kane" date="11/16-12/09" weeks="4">
                 <meeting days="M" time="09:00am - 11:05am" location="Allied Health Sciences 202" date="11/16-12/09" />
-                <meeting days="W" time="09:00am - 11:05am" location="Orange Coast LIVEONLINE" date="" />
+                <meeting days="W" time="09:00am - 11:05am" location="Orange Coast LIVEONLINE" date="11/16-12/09" />
             </section>
         </course>
         <course name="ALH A111 - Medical Terminology">
@@ -59,15 +59,15 @@
         <course name="CDE A199 - Current Issues in E C">
             <section status="OPEN" im="02" crn="22818" crn_link="pw_pub_sched.p_course_popup?vsub=CDE&amp;vcrse=A199&amp;vterm=202670&amp;vcrn=22818&amp;vcoll=OC" cred="1.00" instructor="Devan  Upchurch" date="10/09-10/09" weeks="3">
                 <meeting days="F" time="05:30pm - 08:30pm" location="Consumer Sciences and Design 108" date="10/09-10/09" />
-                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="" />
-                <meeting days="F" time="05:30pm - 08:30pm" location="Consumer Sciences and Design 108" date="" />
-                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="" />
+                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="10/10-10/10" />
+                <meeting days="F" time="05:30pm - 08:30pm" location="Consumer Sciences and Design 108" date="10/23-10/23" />
+                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="10/24-10/24" />
             </section>
         </course>
         <course name="CDE A262 - Disaster Preparedness">
             <section status="OPEN" im="02" crn="22823" crn_link="pw_pub_sched.p_course_popup?vsub=CDE&amp;vcrse=A262&amp;vterm=202670&amp;vcrn=22823&amp;vcoll=OC" cred="0.50" instructor="Karen  Robinson" date="09/25-09/25" weeks="1">
                 <meeting days="F" time="05:30pm - 08:30pm" location="Consumer Sciences and Design 108" date="09/25-09/25" />
-                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="" />
+                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="09/26-09/26" />
             </section>
         </course>
     </subject>
@@ -101,21 +101,21 @@
         <course name="ESL A052 - Adv Academic Read and Write 1">
             <section status="OPEN" im="HY" crn="22211" crn_link="pw_pub_sched.p_course_popup?vsub=ESL&amp;vcrse=A052&amp;vterm=202670&amp;vcrn=22211&amp;vcoll=OC" cred="4.50" instructor="Maria  Lerma" date="09/07-12/12" weeks="14">
                 <meeting days="" time="4.1 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/07-12/12" />
-                <meeting days="T" time="03:00pm - 04:45pm" location="Lit &amp; Lang and Social Sciences 100" date="" />
-                <meeting days="T" time="04:45pm - 05:50pm" location="Lit &amp; Lang and Social Sciences 100" date="" />
+                <meeting days="T" time="03:00pm - 04:45pm" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
+                <meeting days="T" time="04:45pm - 05:50pm" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
             </section>
         </course>
         <course name="ESL A100 - ESL College Composition">
             <section status="OPEN" im="LL" crn="25080" crn_link="pw_pub_sched.p_course_popup?vsub=ESL&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=25080&amp;vcoll=OC" cred="3.00" instructor="Teruo  Masuda" date="09/07-12/12" weeks="14">
                 <meeting days="M W" time="09:00am - 10:10am" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
-                <meeting days="M W" time="10:10am - 12:15pm" location="Lit &amp; Lang and Social Sciences 100" date="" />
+                <meeting days="M W" time="10:10am - 12:15pm" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
             </section>
         </course>
         <course name="ESL A192 - Adv Acad Rdng Resrch Wrtng Hum">
             <section status="OPEN" im="HY" crn="22215" crn_link="pw_pub_sched.p_course_popup?vsub=ESL&amp;vcrse=A192&amp;vterm=202670&amp;vcrn=22215&amp;vcoll=OC" cred="4.50" instructor="Isobel  Civen" date="09/07-12/12" weeks="14">
                 <meeting days="" time="1.95 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/07-12/12" />
                 <meeting days="" time="2.35 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/07-12/12" />
-                <meeting days="Th" time="12:45pm - 03:35pm" location="Lit &amp; Lang and Social Sciences 100" date="" />
+                <meeting days="Th" time="12:45pm - 03:35pm" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
             </section>
         </course>
     </subject>
@@ -123,7 +123,7 @@
         <course name="FBM A102 - Sanitation and Safety">
             <section status="OPEN" im="HY" crn="26158" crn_link="pw_pub_sched.p_course_popup?vsub=FBM&amp;vcrse=A102&amp;vterm=202670&amp;vcrn=26158&amp;vcoll=OC" cred="2.00" instructor="Eric  Cohen" date="09/21-11/09" weeks="8">
                 <meeting days="" time="4.2 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/21-11/09" />
-                <meeting days="M" time="01:00pm - 03:50pm" location="Lit &amp; Lang and Social Sciences 103" date="" />
+                <meeting days="M" time="01:00pm - 03:50pm" location="Lit &amp; Lang and Social Sciences 103" date="11/09-11/09" />
             </section>
         </course>
     </subject>
@@ -181,10 +181,10 @@
         <course name="PUBH A001N - Community Health Worker I">
             <section status="OPEN" im="HY" crn="26113" crn_link="pw_pub_sched.p_course_popup?vsub=PUBH&amp;vcrse=A001N&amp;vterm=202670&amp;vcrn=26113&amp;vcoll=OC" cred="0.00" instructor="Georgia  Halkia" date="09/21-11/13" weeks="8">
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/21-11/13" />
-                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="" />
-                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="" />
-                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="" />
-                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="" />
+                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="09/26-09/26" />
+                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="10/10-10/10" />
+                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="10/24-10/24" />
+                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="11/07-11/07" />
             </section>
         </course>
     </subject>
