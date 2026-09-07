@@ -64,12 +64,42 @@ async def run_scraper():
         )
         continue
 
-      # Section data rows
       cols = row.find_all("td")
-      if len(cols) >= 15 and current_course_elem is not None:
+      if not cols:
+          continue
+          
+      # --- ADDITIONAL MEETING ROW DETECTION ---
+      first_col = cols[0]
+      # Check if this row is the indicator for an additional meeting time
+      if first_col.get("colspan") == "5" and current_section_elem is not None:
+          try:
+              # Indices shift by 4 because 5 columns are merged into the first index (5 - 1 = 4)
+              # Original days was 7 -> now 3
+              # Original time was 12 -> now 8
+              # Original location was 13 -> now 9
+              # Original date was 19 -> now 15
+              meet_days = cols[6].get_text(strip=True)
+              meet_time = cols[8].get_text(strip=True)
+              meet_loc = cols[9].get_text(strip=True)
+              meet_date = cols[11].get_text(strip=True)
+              
+              ET.SubElement(
+                  current_section_elem,
+                  "meeting",
+                  days=meet_days,
+                  time=meet_time,
+                  location=meet_loc,
+                  date=meet_date
+              )
+          except IndexError:
+              continue
+          continue # Move to the next row since we finished handling the additional meeting
+
+      # --- PRIMARY SECTION DATA ROW ---
+      # Ensure there are enough columns to support your updated custom indices (weeks is at 20)
+      if len(cols) > 20 and current_course_elem is not None:
         status = cols[0].get_text(strip=True)
         im = cols[1].get_text(strip=True)
-        # cols[2] (zc) is skipped
         
         # --- CRN and Link Extraction ---
         crn = cols[3].get_text(strip=True)
@@ -87,8 +117,6 @@ async def run_scraper():
         days = cols[7].get_text(strip=True)
         time_slot = cols[12].get_text(strip=True)
         
-        # --- CORRECTED COLUMN ASSIGNMENTS ---
-        # cols[7] through cols[10] (cap, act, wl_cap, wl_act) are skipped
         location = cols[13].get_text(strip=True)
         instructor = cols[18].get_text(strip=True)
         date = cols[19].get_text(strip=True)
@@ -107,20 +135,14 @@ async def run_scraper():
               date=date,
               weeks=weeks,
           )
+          # Initial meeting element attached to the section
           ET.SubElement(
               current_section_elem,
               "meeting",
               days=days,
               time=time_slot,
               location=location,
-          )
-        elif current_section_elem is not None:  # Additional meeting time row for the same CRN
-          ET.SubElement(
-              current_section_elem,
-              "meeting",
-              days=days,
-              time=time_slot,
-              location=location,
+              date=date
           )
 
     # 6. Export formatted XML tree to file
