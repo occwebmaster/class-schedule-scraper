@@ -2,93 +2,98 @@
 <schedule term="OCC Fall 2026">
     <subject name="ADLT - Older Adult/Emeritus">
         <course name="ADLT A041N - Spanish for Travel">
-            <section status="OPEN" im="02" crn="25727" crn_link="pw_pub_sched.p_course_popup?vsub=ADLT&amp;vcrse=A041N&amp;vterm=202670&amp;vcrn=25727&amp;vcoll=OC" cred="0.00" instructor="08:05am - 09:25am" date="Lit &amp; Lang and Social Sciences 303" weeks="24">
-                <meeting days="M" time="" location="W" />
+            <section status="OPEN" im="02" crn="25727" crn_link="pw_pub_sched.p_course_popup?vsub=ADLT&amp;vcrse=A041N&amp;vterm=202670&amp;vcrn=25727&amp;vcoll=OC" cred="0.00" instructor="" date="08:05am - 09:25am" weeks="24">
+                <meeting days="M" time="" location="Lit &amp; Lang and Social Sciences 303" />
             </section>
         </course>
     </subject>
     <subject name="ALH - Allied Health">
         <course name="ALH A002N - Personal Care Aide II">
-            <section status="OPEN" im="HY" crn="23714" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A002N&amp;vterm=202670&amp;vcrn=23714&amp;vcoll=OC" cred="0.00" instructor="09:00am - 11:50am" date="Allied Health Sciences 202" weeks="24">
-                <meeting days="M" time="" location="" />
+            <section status="OPEN" im="HY" crn="23714" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A002N&amp;vterm=202670&amp;vcrn=23714&amp;vcoll=OC" cred="0.00" instructor="" date="09:00am - 11:50am" weeks="24">
+                <meeting days="M" time="" location="Allied Health Sciences 202" />
             </section>
         </course>
         <course name="ALH A009N - PCA: Assist Alzheimer/Dementia">
-            <section status="OPEN" im="HY" crn="23715" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A009N&amp;vterm=202670&amp;vcrn=23715&amp;vcoll=OC" cred="0.00" instructor="09:00am - 11:05am" date="Allied Health Sciences 202" weeks="24">
-                <meeting days="M" time="" location="" />
+            <section status="OPEN" im="HY" crn="23715" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A009N&amp;vterm=202670&amp;vcrn=23715&amp;vcoll=OC" cred="0.00" instructor="" date="09:00am - 11:05am" weeks="24">
+                <meeting days="M" time="" location="Allied Health Sciences 202" />
             </section>
         </course>
         <course name="ALH A111 - Medical Terminology" />
     </subject>
     <subject name="ARCH - Architecture">
         <course name="ARCH A004N - Intro FrameCAD Steel Framng NC">
-            <section status="OPEN" im="02" crn="25981" crn_link="pw_pub_sched.p_course_popup?vsub=ARCH&amp;vcrse=A004N&amp;vterm=202670&amp;vcrn=25981&amp;vcoll=OC" cred="0.00" instructor="01:00pm - 03:50pm" date="Technology Center 155" weeks="2424">
-                <meeting days="" time="" location="W" />
+            <section status="OPEN" im="02" crn="25981" crn_link="pw_pub_sched.p_course_popup?vsub=ARCH&amp;vcrse=A004N&amp;vterm=202670&amp;vcrn=25981&amp;vcoll=OC" cred="0.00" instructor="" date="01:00pm - 03:50pm" weeks="2424">
+                <meeting days="" time="" location="Technology Center 155" />
             </section>
         </course>
         <course name="ARCH A104 - Intro FrameCAD Steel Framing">
-            <section status="OPEN" im="02" crn="25982" crn_link="pw_pub_sched.p_course_popup?vsub=ARCH&amp;vcrse=A104&amp;vterm=202670&amp;vcrn=25982&amp;vcoll=OC" cred="1.00" instructor="01:00pm - 03:50pm" date="Technology Center 155" weeks="2424">
-                <meeting days="" time="" location="W" />
+            <section status="OPEN" im="02" crn="25982" crn_link="pw_pub_sched.p_course_popup?vsub=ARCH&amp;vcrse=A104&amp;vterm=202670&amp;vcrn=25982&amp;vcoll=OC" cred="1.00" instructor="" date="01:00pm - 03:50pm" weeks="2424">
+                <meeting days="" time="" location="Technology Center 155" />
             </section>
         </course>
     </subject>
     <subject name="BUS - Business">
         <course name="BUS A120 - Personl Financl Success">
-            <section status="OPEN" im="02" crn="20687" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A120&amp;vterm=202670&amp;vcrn=20687&amp;vcoll=OC" cred="3.00" instructor="05:45pm - 09:20pm" date="Math, Business, Computing Ctr 303" weeks="45">
-                <meeting days="" time="T" location="" />
+            <section status="OPEN" im="02" crn="20687" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A120&amp;vterm=202670&amp;vcrn=20687&amp;vcoll=OC" cred="3.00" instructor="" date="05:45pm - 09:20pm" weeks="45">
+                <meeting days="" time="T" location="Math, Business, Computing Ctr 303" />
             </section>
         </course>
         <course name="BUS A212 - Practical Investmt Mgmt">
-            <section status="OPEN" im="02" crn="25886" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A212&amp;vterm=202670&amp;vcrn=25886&amp;vcoll=OC" cred="3.00" instructor="05:30pm - 09:35pm" date="Math, Business, Computing Ctr 303" weeks="45">
-                <meeting days="" time="" location="W" />
+            <section status="OPEN" im="02" crn="25886" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A212&amp;vterm=202670&amp;vcrn=25886&amp;vcoll=OC" cred="3.00" instructor="" date="05:30pm - 09:35pm" weeks="45">
+                <meeting days="" time="" location="Math, Business, Computing Ctr 303" />
             </section>
         </course>
         <course name="BUS A239 - Professionl Communicatn">
-            <section status="OPEN" im="02" crn="20002" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A239&amp;vterm=202670&amp;vcrn=20002&amp;vcoll=OC" cred="3.00" instructor="05:45pm - 09:20pm" date="Math, Business, Computing Ctr 301" weeks="4545">
-                <meeting days="" time="T" location="" />
+            <section status="OPEN" im="02" crn="20002" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A239&amp;vterm=202670&amp;vcrn=20002&amp;vcoll=OC" cred="3.00" instructor="" date="05:45pm - 09:20pm" weeks="4545">
+                <meeting days="" time="T" location="Math, Business, Computing Ctr 301" />
             </section>
         </course>
     </subject>
     <subject name="CDE - Child Development / Education">
         <course name="CDE A199 - Current Issues in E C">
-            <section status="OPEN" im="02" crn="22818" crn_link="pw_pub_sched.p_course_popup?vsub=CDE&amp;vcrse=A199&amp;vterm=202670&amp;vcrn=22818&amp;vcoll=OC" cred="1.00" instructor="05:30pm - 08:30pm" date="Consumer Sciences and Design 108" weeks="32">
-                <meeting days="" time="" location="" />
+            <section status="OPEN" im="02" crn="22818" crn_link="pw_pub_sched.p_course_popup?vsub=CDE&amp;vcrse=A199&amp;vterm=202670&amp;vcrn=22818&amp;vcoll=OC" cred="1.00" instructor="" date="05:30pm - 08:30pm" weeks="32">
+                <meeting days="" time="" location="Consumer Sciences and Design 108" />
             </section>
         </course>
         <course name="CDE A262 - Disaster Preparedness">
-            <section status="OPEN" im="02" crn="22823" crn_link="pw_pub_sched.p_course_popup?vsub=CDE&amp;vcrse=A262&amp;vterm=202670&amp;vcrn=22823&amp;vcoll=OC" cred="0.50" instructor="05:30pm - 08:30pm" date="Consumer Sciences and Design 108" weeks="32">
-                <meeting days="" time="" location="" />
+            <section status="OPEN" im="02" crn="22823" crn_link="pw_pub_sched.p_course_popup?vsub=CDE&amp;vcrse=A262&amp;vterm=202670&amp;vcrn=22823&amp;vcoll=OC" cred="0.50" instructor="" date="05:30pm - 08:30pm" weeks="32">
+                <meeting days="" time="" location="Consumer Sciences and Design 108" />
             </section>
         </course>
     </subject>
     <subject name="CHT - Computer / High Technology">
         <course name="CHT A095N - AI for Professionals">
-            <section status="OPEN" im="02" crn="25822" crn_link="pw_pub_sched.p_course_popup?vsub=CHT&amp;vcrse=A095N&amp;vterm=202670&amp;vcrn=25822&amp;vcoll=OC" cred="0.00" instructor="05:40pm - 07:45pm" date="Math, Business, Computing Ctr 126" weeks="20">
-                <meeting days="" time="T" location="" />
+            <section status="OPEN" im="02" crn="25822" crn_link="pw_pub_sched.p_course_popup?vsub=CHT&amp;vcrse=A095N&amp;vterm=202670&amp;vcrn=25822&amp;vcoll=OC" cred="0.00" instructor="" date="05:40pm - 07:45pm" weeks="20">
+                <meeting days="" time="T" location="Math, Business, Computing Ctr 126" />
             </section>
         </course>
     </subject>
     <subject name="COS - Consumer Studies">
         <course name="COS A001N - Intro to Customer Service">
-            <section status="OPEN" im="02" crn="25247" crn_link="pw_pub_sched.p_course_popup?vsub=COS&amp;vcrse=A001N&amp;vterm=202670&amp;vcrn=25247&amp;vcoll=OC" cred="0.00" instructor="06:00pm - 07:25pm" date="Orange Coast LIVEONLINE" weeks="24">
-                <meeting days="M" time="" location="W" />
+            <section status="OPEN" im="02" crn="25247" crn_link="pw_pub_sched.p_course_popup?vsub=COS&amp;vcrse=A001N&amp;vterm=202670&amp;vcrn=25247&amp;vcoll=OC" cred="0.00" instructor="" date="06:00pm - 07:25pm" weeks="24">
+                <meeting days="M" time="" location="Orange Coast LIVEONLINE" />
             </section>
         </course>
         <course name="COS A002N - Customer Serv &amp; Retail Emply">
-            <section status="OPEN" im="02" crn="22685" crn_link="pw_pub_sched.p_course_popup?vsub=COS&amp;vcrse=A002N&amp;vterm=202670&amp;vcrn=22685&amp;vcoll=OC" cred="0.00" instructor="09:00am - 11:50am" date="Consumer Sciences and Design 102" weeks="24">
-                <meeting days="" time="" location="" />
+            <section status="OPEN" im="02" crn="22685" crn_link="pw_pub_sched.p_course_popup?vsub=COS&amp;vcrse=A002N&amp;vterm=202670&amp;vcrn=22685&amp;vcoll=OC" cred="0.00" instructor="" date="09:00am - 11:50am" weeks="24">
+                <meeting days="" time="" location="Consumer Sciences and Design 102" />
             </section>
         </course>
     </subject>
     <subject name="ELL - English Language Learning">
         <course name="ELL A020N - ELL for US Citizenship">
-            <section status="OPEN" im="71" crn="25547" crn_link="pw_pub_sched.p_course_popup?vsub=ELL&amp;vcrse=A020N&amp;vterm=202670&amp;vcrn=25547&amp;vcoll=OC" cred="0.00" instructor="06:00pm - 08:05pm" date="Orange Coast LIVEONLINE" weeks="30">
-                <meeting days="" time="T" location="" />
+            <section status="OPEN" im="71" crn="25547" crn_link="pw_pub_sched.p_course_popup?vsub=ELL&amp;vcrse=A020N&amp;vterm=202670&amp;vcrn=25547&amp;vcoll=OC" cred="0.00" instructor="" date="06:00pm - 08:05pm" weeks="30">
+                <meeting days="" time="T" location="Orange Coast LIVEONLINE" />
             </section>
         </course>
     </subject>
     <subject name="ESL - English as a Second Language">
         <course name="ESL A052 - Adv Academic Read and Write 1" />
+        <course name="ESL A100 - ESL College Composition">
+            <section status="OPEN" im="LL" crn="25080" crn_link="pw_pub_sched.p_course_popup?vsub=ESL&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=25080&amp;vcoll=OC" cred="3.00" instructor="" date="09:00am - 10:10am" weeks="30">
+                <meeting days="M" time="" location="Lit &amp; Lang and Social Sciences 100" />
+            </section>
+        </course>
         <course name="ESL A192 - Adv Acad Rdng Resrch Wrtng Hum" />
     </subject>
     <subject name="FBM - Food and Beverage Management">
@@ -96,8 +101,8 @@
     </subject>
     <subject name="HTT - Hospitality, Travel / Tourism">
         <course name="HTT A003N - Careers Hospitality/Tourism NC">
-            <section status="OPEN" im="71" crn="24256" crn_link="pw_pub_sched.p_course_popup?vsub=HTT&amp;vcrse=A003N&amp;vterm=202670&amp;vcrn=24256&amp;vcoll=OC" cred="0.00" instructor="06:00pm - 07:15pm" date="Orange Coast LIVEONLINE" weeks="24">
-                <meeting days="M" time="" location="W" />
+            <section status="OPEN" im="71" crn="24256" crn_link="pw_pub_sched.p_course_popup?vsub=HTT&amp;vcrse=A003N&amp;vterm=202670&amp;vcrn=24256&amp;vcoll=OC" cred="0.00" instructor="" date="06:00pm - 07:15pm" weeks="24">
+                <meeting days="M" time="" location="Orange Coast LIVEONLINE" />
             </section>
         </course>
     </subject>
@@ -107,32 +112,32 @@
     </subject>
     <subject name="LEAD - Leadership">
         <course name="LEAD A180 - Personal Leadership">
-            <section status="OPEN" im="02" crn="22569" crn_link="pw_pub_sched.p_course_popup?vsub=LEAD&amp;vcrse=A180&amp;vterm=202670&amp;vcrn=22569&amp;vcoll=OC" cred="3.00" instructor="05:45pm - 09:50pm" date="Math, Business, Computing Ctr 207" weeks="45">
-                <meeting days="" time="" location="" />
+            <section status="OPEN" im="02" crn="22569" crn_link="pw_pub_sched.p_course_popup?vsub=LEAD&amp;vcrse=A180&amp;vterm=202670&amp;vcrn=22569&amp;vcoll=OC" cred="3.00" instructor="" date="05:45pm - 09:50pm" weeks="45">
+                <meeting days="" time="" location="Math, Business, Computing Ctr 207" />
             </section>
         </course>
     </subject>
     <subject name="MGMT - Management">
         <course name="MGMT A239 - Professionl Communicatn">
-            <section status="OPEN" im="02" crn="20003" crn_link="pw_pub_sched.p_course_popup?vsub=MGMT&amp;vcrse=A239&amp;vterm=202670&amp;vcrn=20003&amp;vcoll=OC" cred="3.00" instructor="05:45pm - 09:20pm" date="Math, Business, Computing Ctr 301" weeks="4545">
-                <meeting days="" time="T" location="" />
+            <section status="OPEN" im="02" crn="20003" crn_link="pw_pub_sched.p_course_popup?vsub=MGMT&amp;vcrse=A239&amp;vterm=202670&amp;vcrn=20003&amp;vcoll=OC" cred="3.00" instructor="" date="05:45pm - 09:20pm" weeks="4545">
+                <meeting days="" time="T" location="Math, Business, Computing Ctr 301" />
             </section>
         </course>
     </subject>
     <subject name="PHMT - Pharmacy Technician">
         <course name="PHMT A090N - Pharmacy Tech Cert Exam Prep">
-            <section status="OPEN" im="02" crn="26106" crn_link="pw_pub_sched.p_course_popup?vsub=PHMT&amp;vcrse=A090N&amp;vterm=202670&amp;vcrn=26106&amp;vcoll=OC" cred="0.00" instructor="08:30am - 10:00am" date="C &amp; L 110" weeks="24">
-                <meeting days="M" time="" location="" />
+            <section status="OPEN" im="02" crn="26106" crn_link="pw_pub_sched.p_course_popup?vsub=PHMT&amp;vcrse=A090N&amp;vterm=202670&amp;vcrn=26106&amp;vcoll=OC" cred="0.00" instructor="" date="08:30am - 10:00am" weeks="24">
+                <meeting days="M" time="" location="C &amp; L 110" />
             </section>
-            <section status="OPEN" im="02" crn="25229" crn_link="pw_pub_sched.p_course_popup?vsub=PHMT&amp;vcrse=A090N&amp;vterm=202670&amp;vcrn=25229&amp;vcoll=OC" cred="0.00" instructor="06:00pm - 08:05pm" date="C &amp; L 110" weeks="24">
-                <meeting days="" time="" location="" />
+            <section status="OPEN" im="02" crn="25229" crn_link="pw_pub_sched.p_course_popup?vsub=PHMT&amp;vcrse=A090N&amp;vterm=202670&amp;vcrn=25229&amp;vcoll=OC" cred="0.00" instructor="" date="06:00pm - 08:05pm" weeks="24">
+                <meeting days="" time="" location="C &amp; L 110" />
             </section>
         </course>
     </subject>
     <subject name="PHYS - Physics">
         <course name="PHYS A110 - Conceptual Physics">
-            <section status="OPEN" im="02" crn="21019" crn_link="pw_pub_sched.p_course_popup?vsub=PHYS&amp;vcrse=A110&amp;vterm=202670&amp;vcrn=21019&amp;vcoll=OC" cred="3.00" instructor="03:25pm - 05:35pm" date="Lewis Center 201" weeks="72">
-                <meeting days="" time="T" location="" />
+            <section status="OPEN" im="02" crn="21019" crn_link="pw_pub_sched.p_course_popup?vsub=PHYS&amp;vcrse=A110&amp;vterm=202670&amp;vcrn=21019&amp;vcoll=OC" cred="3.00" instructor="" date="03:25pm - 05:35pm" weeks="72">
+                <meeting days="" time="T" location="Lewis Center 201" />
             </section>
         </course>
     </subject>
@@ -142,8 +147,8 @@
     <subject name="RSPC - Respiratory Care">
         <course name="RSPC A276 - Clinical Lab 3" />
         <course name="RSPC A279 - Physician Series 1">
-            <section status="OPEN" im="71" crn="21149" crn_link="pw_pub_sched.p_course_popup?vsub=RSPC&amp;vcrse=A279&amp;vterm=202670&amp;vcrn=21149&amp;vcoll=OC" cred="0.50" instructor="04:00pm - 05:00pm" date="Orange Coast LIVEONLINE" weeks="18">
-                <meeting days="" time="" location="W" />
+            <section status="OPEN" im="71" crn="21149" crn_link="pw_pub_sched.p_course_popup?vsub=RSPC&amp;vcrse=A279&amp;vterm=202670&amp;vcrn=21149&amp;vcoll=OC" cred="0.50" instructor="" date="04:00pm - 05:00pm" weeks="18">
+                <meeting days="" time="" location="Orange Coast LIVEONLINE" />
             </section>
         </course>
     </subject>
