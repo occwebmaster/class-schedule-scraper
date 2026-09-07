@@ -62,91 +62,59 @@ async def run_scraper():
         current_course_elem = ET.SubElement(
             current_subject_elem, "course", name=crn_td.get_text(strip=True)
         )
+        # CRUCIAL FIX: Reset the active section when a new course starts
+        # This prevents meetings from bleeding into the previous course
+        current_section_elem = None 
         continue
 
       cols = row.find_all("td")
       if not cols:
           continue
           
-      # --- ADDITIONAL MEETING ROW DETECTION ---
       first_col = cols[0]
-      # Check if this row is the indicator for an additional meeting time
-      if first_col.get("colspan") == "5" and current_section_elem is not None:
-          try:
-              # Check for the secondary meeting colspan="8" edge-case (e.g., TBA/Online slots)
-              is_addl_colspan_8 = (len(cols) > 1 and cols[1].get("colspan") == "8" and "default2" in cols[1].get("class", []))
-              
-              if is_addl_colspan_8:
-                  meet_time = cols[1].get_text(strip=True)
-                  meet_days = ""
-                  meet_loc = cols[2].get_text(strip=True)
-                  meet_instructor = cols[3].get_text(strip=True) # Extracted as requested
-                  meet_date = cols[4].get_text(strip=True)
-                  meet_weeks = cols[5].get_text(strip=True)      # Extracted as requested
-              else:
-                  # Gather standard days from columns 1 to 7[cite: 8]
-                  meet_days_list = [cols[i].get_text(strip=True) for i in range(1, 8) if len(cols) > i and cols[i].get_text(strip=True)]
-                  meet_days = " ".join(meet_days_list)
-                  meet_time = cols[8].get_text(strip=True) if len(cols) > 8 else ""
-                  meet_loc = cols[9].get_text(strip=True) if len(cols) > 9 else ""
-                  meet_date = cols[15].get_text(strip=True) if len(cols) > 15 else ""
-              
-              ET.SubElement(
-                  current_section_elem,
-                  "meeting",
-                  days=meet_days,
-                  time=meet_time,
-                  location=meet_loc,
-                  date=meet_date
-              )
-          except IndexError:
-              continue
-          continue # Move to the next row since we finished handling the additional meeting
-
+      
+      # Determine if this row is a primary section row by checking if col[3] is a numeric CRN
+      crn_text = cols[3].get_text(strip=True) if len(cols) > 3 else ""
+      is_primary_row = bool(crn_text.isdigit())
+      
       # --- PRIMARY SECTION DATA ROW ---
-      if len(cols) > 5 and current_course_elem is not None:
-        # Identify if this row matches the colspan="8" format for timeslots
-        is_primary_colspan_8 = (cols[5].get("colspan") == "8" and "default2" in cols[5].get("class", []))
-        
-        # Ensure row has standard length if it's not the special colspan="8" row
-        if not is_primary_colspan_8 and len(cols) <= 20:
-            continue
-            
+      if is_primary_row and current_course_elem is not None:
         status = cols[0].get_text(strip=True)
         im = cols[1].get_text(strip=True)
+        crn = crn_text
         
-        # --- CRN and Link Extraction ---
-        crn = cols[3].get_text(strip=True)
+        # --- CRN Link Extraction ---
         crn_link = ""
         crn_anchor = cols[3].find("a")
         if crn_anchor and "href" in crn_anchor.attrs:
             raw_href = crn_anchor["href"]
-            # Extract just the URL part from JavaScript:winOpen('URL')
             if "winOpen('" in raw_href:
                 crn_link = raw_href.split("winOpen('")[1].split("')")[0]
             else:
                 crn_link = raw_href
                 
-        cred = cols[4].get_text(strip=True)
+        cred = cols[4].get_text(strip=True) if len(cols) > 4 else ""
+        
+        # Identify if this row matches the colspan="8" format for timeslots (e.g. TBA)
+        is_primary_colspan_8 = (len(cols) > 5 and cols[5].get("colspan") == "8")
         
         if is_primary_colspan_8:
             days = ""
             time_slot = cols[5].get_text(strip=True)
-            location = cols[6].get_text(strip=True)
-            instructor = cols[11].get_text(strip=True)
-            date = cols[12].get_text(strip=True)
-            # Assuming column 13 for weeks (shifting due to the colspan offset)
+            location = cols[6].get_text(strip=True) if len(cols) > 6 else ""
+            instructor = cols[11].get_text(strip=True) if len(cols) > 11 else ""
+            date = cols[12].get_text(strip=True) if len(cols) > 12 else ""
             weeks = cols[13].get_text(strip=True) if len(cols) > 13 else ""
         else:
-            # Gather standard days from columns 5 to 11[cite: 8]
-            days_list = [cols[i].get_text(strip=True) for i in range(5, 12) if cols[i].get_text(strip=True)]
+            # Gather standard days from columns 5 to 11
+            days_list = [cols[i].get_text(strip=True) for i in range(5, 12) if i < len(cols) and cols[i].get_text(strip=True)]
             days = " ".join(days_list)
             
-            time_slot = cols[12].get_text(strip=True)
-            location = cols[13].get_text(strip=True)
-            instructor = cols[18].get_text(strip=True)
-            date = cols[19].get_text(strip=True)
-            weeks = cols[20].get_text(strip=True)
+            time_slot = cols[12].get_text(strip=True) if len(cols) > 12 else ""
+            location = cols[13].get_text(strip=True) if len(cols) > 13 else ""
+            instructor = cols[18].get_text(strip=True) if len(cols) > 18 else ""
+            date = cols[19].get_text(strip=True) if len(cols) > 19 else ""
+            weeks = cols[20].get_text(strip=True) if len(cols) > 20 else ""
 
         if crn:  # New section row
           current_section_elem = ET.SubElement(
@@ -170,6 +138,36 @@ async def run_scraper():
               location=location,
               date=date
           )
+
+      # --- ADDITIONAL MEETING ROW DETECTION ---
+      elif first_col.get("colspan") == "5" and current_section_elem is not None:
+          try:
+              # Check for the secondary meeting colspan="8" edge-case
+              is_addl_colspan_8 = (len(cols) > 1 and cols[1].get("colspan") == "8")
+              
+              if is_addl_colspan_8:
+                  meet_time = cols[1].get_text(strip=True)
+                  meet_days = ""
+                  meet_loc = cols[2].get_text(strip=True) if len(cols) > 2 else ""
+                  meet_date = cols[4].get_text(strip=True) if len(cols) > 4 else ""
+              else:
+                  # Gather standard days from columns 1 to 7
+                  meet_days_list = [cols[i].get_text(strip=True) for i in range(1, 8) if i < len(cols) and cols[i].get_text(strip=True)]
+                  meet_days = " ".join(meet_days_list)
+                  meet_time = cols[8].get_text(strip=True) if len(cols) > 8 else ""
+                  meet_loc = cols[9].get_text(strip=True) if len(cols) > 9 else ""
+                  meet_date = cols[15].get_text(strip=True) if len(cols) > 15 else ""
+              
+              ET.SubElement(
+                  current_section_elem,
+                  "meeting",
+                  days=meet_days,
+                  time=meet_time,
+                  location=meet_loc,
+                  date=meet_date
+              )
+          except IndexError:
+              continue
 
     # 6. Export formatted XML tree to file
     tree = ET.ElementTree(root)
