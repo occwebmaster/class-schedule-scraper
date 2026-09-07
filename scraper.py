@@ -84,8 +84,8 @@ async def run_scraper():
                 crn_link = raw_href
                 
         cred = cols[4].get_text(strip=True)
-        days = cols[5].get_text(strip=True)
-        time_slot = cols[6].get_text(strip=True)
+        days = cols[7].get_text(strip=True)
+        time_slot = cols[12].get_text(strip=True)
         
         # --- CORRECTED COLUMN ASSIGNMENTS ---
         # cols[7] through cols[10] (cap, act, wl_cap, wl_act) are skipped
