@@ -85,10 +85,12 @@ async def run_scraper():
         cred = cols[4].get_text(strip=True)
         days = cols[5].get_text(strip=True)
         time_slot = cols[6].get_text(strip=True)
-        location = cols[7].get_text(strip=True)
-        # cols[8] through cols[11] (cap, act, wl_cap, wl_act) are skipped
-        instructor = cols[12].get_text(strip=True)
-        date = cols[13].get_text(strip=True)
+        
+        # --- CORRECTED COLUMN ASSIGNMENTS ---
+        # cols[7] through cols[10] (cap, act, wl_cap, wl_act) are skipped
+        instructor = cols[11].get_text(strip=True)
+        date = cols[12].get_text(strip=True)
+        location = cols[13].get_text(strip=True)
         weeks = cols[14].get_text(strip=True)
 
         if crn:  # New section row
