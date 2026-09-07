@@ -89,10 +89,10 @@ async def run_scraper():
         
         # --- CORRECTED COLUMN ASSIGNMENTS ---
         # cols[7] through cols[10] (cap, act, wl_cap, wl_act) are skipped
-        location = cols[11].get_text(strip=True)
-        instructor = cols[12].get_text(strip=True)
-        date = cols[13].get_text(strip=True)
-        weeks = cols[14].get_text(strip=True)
+        location = cols[13].get_text(strip=True)
+        instructor = cols[18].get_text(strip=True)
+        date = cols[19].get_text(strip=True)
+        weeks = cols[20].get_text(strip=True)
 
         if crn:  # New section row
           current_section_elem = ET.SubElement(
