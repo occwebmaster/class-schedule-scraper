@@ -109,11 +109,15 @@
             <section status="OPEN" im="LL" crn="25080" crn_link="pw_pub_sched.p_course_popup?vsub=ESL&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=25080&amp;vcoll=OC" cred="3.00" instructor="Teruo  Masuda" date="09/07-12/12" weeks="14">
                 <meeting days="M W" time="09:00am - 10:10am" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
                 <meeting days="M W" time="10:10am - 12:15pm" location="Lit &amp; Lang and Social Sciences 100" date="" />
+            </section>
+        </course>
+        <course name="ESL A192 - Adv Acad Rdng Resrch Wrtng Hum">
+            <section status="OPEN" im="HY" crn="22215" crn_link="pw_pub_sched.p_course_popup?vsub=ESL&amp;vcrse=A192&amp;vterm=202670&amp;vcrn=22215&amp;vcoll=OC" cred="4.50" instructor="Isobel  Civen" date="09/07-12/12" weeks="14">
+                <meeting days="" time="1.95 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/07-12/12" />
                 <meeting days="" time="2.35 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/07-12/12" />
                 <meeting days="Th" time="12:45pm - 03:35pm" location="Lit &amp; Lang and Social Sciences 100" date="" />
             </section>
         </course>
-        <course name="ESL A192 - Adv Acad Rdng Resrch Wrtng Hum" />
     </subject>
     <subject name="FBM - Food and Beverage Management">
         <course name="FBM A102 - Sanitation and Safety">
@@ -131,7 +135,11 @@
         </course>
     </subject>
     <subject name="KIN - Kinesiology">
-        <course name="KIN A102 - Medical Terminology" />
+        <course name="KIN A102 - Medical Terminology">
+            <section status="OPEN" im="72" crn="26163" crn_link="pw_pub_sched.p_course_popup?vsub=KIN&amp;vcrse=A102&amp;vterm=202670&amp;vcrn=26163&amp;vcoll=OC" cred="3.00" instructor="Christy  Brown" date="09/28-11/20" weeks="8">
+                <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/28-11/20" />
+            </section>
+        </course>
         <course name="KIN A204 - Techniques and Theory Coaching">
             <section status="OPEN" im="2" crn="24998" crn_link="pw_pub_sched.p_course_popup?vsub=KIN&amp;vcrse=A204&amp;vterm=202670&amp;vcrn=24998&amp;vcoll=OC" cred="3.00" instructor="Cameron  Brown" date="10/05-12/12" weeks="10">
                 <meeting days="" time="5.4 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/05-12/12" />
@@ -181,7 +189,11 @@
         </course>
     </subject>
     <subject name="RSPC - Respiratory Care">
-        <course name="RSPC A276 - Clinical Lab 3" />
+        <course name="RSPC A276 - Clinical Lab 3">
+            <section status="OPEN" im="20" crn="20353" crn_link="pw_pub_sched.p_course_popup?vsub=RSPC&amp;vcrse=A276&amp;vterm=202670&amp;vcrn=20353&amp;vcoll=OC" cred="4.50" instructor="Christina  Montano" date="09/21-11/25" weeks="10">
+                <meeting days="" time="24.3 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="OCC Offsite COMM SITE" date="09/21-11/25" />
+            </section>
+        </course>
         <course name="RSPC A279 - Physician Series 1">
             <section status="OPEN" im="71" crn="21149" crn_link="pw_pub_sched.p_course_popup?vsub=RSPC&amp;vcrse=A279&amp;vterm=202670&amp;vcrn=21149&amp;vcoll=OC" cred="0.50" instructor="Alison  Riggio" date="09/09-10/28" weeks="8">
                 <meeting days="W" time="04:00pm - 05:00pm" location="Orange Coast LIVEONLINE" date="09/09-10/28" />
