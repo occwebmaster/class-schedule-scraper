@@ -73,12 +73,10 @@ async def run_scraper():
       # Check if this row is the indicator for an additional meeting time
       if first_col.get("colspan") == "5" and current_section_elem is not None:
           try:
-              # Indices shift by 4 because 5 columns are merged into the first index (5 - 1 = 4)
-              # Original days was 7 -> now 3
-              # Original time was 12 -> now 8
-              # Original location was 13 -> now 9
-              # Original date was 19 -> now 15
-              meet_days = cols[6].get_text(strip=True)
+              # Gather days from columns 1 to 7[cite: 8]
+              meet_days_list = [cols[i].get_text(strip=True) for i in range(1, 8) if cols[i].get_text(strip=True)]
+              meet_days = " ".join(meet_days_list)
+              
               meet_time = cols[8].get_text(strip=True)
               meet_loc = cols[9].get_text(strip=True)
               meet_date = cols[11].get_text(strip=True)
@@ -114,9 +112,12 @@ async def run_scraper():
                 crn_link = raw_href
                 
         cred = cols[4].get_text(strip=True)
-        days = cols[7].get_text(strip=True)
-        time_slot = cols[12].get_text(strip=True)
         
+        # Gather days from columns 5 to 11[cite: 8]
+        days_list = [cols[i].get_text(strip=True) for i in range(5, 12) if cols[i].get_text(strip=True)]
+        days = " ".join(days_list)
+        
+        time_slot = cols[12].get_text(strip=True)
         location = cols[13].get_text(strip=True)
         instructor = cols[18].get_text(strip=True)
         date = cols[19].get_text(strip=True)
