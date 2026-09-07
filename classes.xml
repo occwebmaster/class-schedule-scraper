@@ -3,19 +3,21 @@
     <subject name="ADLT - Older Adult/Emeritus">
         <course name="ADLT A041N - Spanish for Travel">
             <section status="OPEN" im="02" crn="25727" crn_link="pw_pub_sched.p_course_popup?vsub=ADLT&amp;vcrse=A041N&amp;vterm=202670&amp;vcrn=25727&amp;vcoll=OC" cred="0.00" instructor="Ivon  Saldana" date="09/28-10/28" weeks="5">
-                <meeting days="M" time="" location="Lit &amp; Lang and Social Sciences 303" />
+                <meeting days="M W" time="08:05am - 09:25am" location="Lit &amp; Lang and Social Sciences 303" date="09/28-10/28" />
             </section>
         </course>
     </subject>
     <subject name="ALH - Allied Health">
         <course name="ALH A002N - Personal Care Aide II">
             <section status="OPEN" im="HY" crn="23714" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A002N&amp;vterm=202670&amp;vcrn=23714&amp;vcoll=OC" cred="0.00" instructor="Raenie  Kane" date="10/12-11/09" weeks="5">
-                <meeting days="M" time="" location="Allied Health Sciences 202" />
+                <meeting days="M" time="09:00am - 11:50am" location="Allied Health Sciences 202" date="10/12-11/09" />
+                <meeting days="W" time="09:00am - 11:50am" location="Orange Coast LIVEONLINE" date="10/12-11/09" />
             </section>
         </course>
         <course name="ALH A009N - PCA: Assist Alzheimer/Dementia">
             <section status="OPEN" im="HY" crn="23715" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A009N&amp;vterm=202670&amp;vcrn=23715&amp;vcoll=OC" cred="0.00" instructor="Raenie  Kane" date="11/16-12/09" weeks="4">
-                <meeting days="M" time="" location="Allied Health Sciences 202" />
+                <meeting days="M" time="09:00am - 11:05am" location="Allied Health Sciences 202" date="11/16-12/09" />
+                <meeting days="W" time="09:00am - 11:05am" location="Orange Coast LIVEONLINE" date="11/16-12/09" />
             </section>
         </course>
         <course name="ALH A111 - Medical Terminology" />
@@ -23,67 +25,73 @@
     <subject name="ARCH - Architecture">
         <course name="ARCH A004N - Intro FrameCAD Steel Framng NC">
             <section status="OPEN" im="02" crn="25981" crn_link="pw_pub_sched.p_course_popup?vsub=ARCH&amp;vcrse=A004N&amp;vterm=202670&amp;vcrn=25981&amp;vcoll=OC" cred="0.00" instructor="Teva  Crowley" date="09/09-10/14" weeks="6">
-                <meeting days="" time="" location="Technology Center 155" />
+                <meeting days="W" time="01:00pm - 03:50pm" location="Technology Center 155" date="09/09-10/14" />
             </section>
         </course>
         <course name="ARCH A104 - Intro FrameCAD Steel Framing">
             <section status="OPEN" im="02" crn="25982" crn_link="pw_pub_sched.p_course_popup?vsub=ARCH&amp;vcrse=A104&amp;vterm=202670&amp;vcrn=25982&amp;vcoll=OC" cred="1.00" instructor="Teva  Crowley" date="09/09-10/14" weeks="6">
-                <meeting days="" time="" location="Technology Center 155" />
+                <meeting days="W" time="01:00pm - 03:50pm" location="Technology Center 155" date="09/09-10/14" />
             </section>
         </course>
     </subject>
     <subject name="BUS - Business">
         <course name="BUS A120 - Personl Financl Success">
             <section status="OPEN" im="02" crn="20687" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A120&amp;vterm=202670&amp;vcrn=20687&amp;vcoll=OC" cred="3.00" instructor="David  Plisco" date="09/08-12/12" weeks="14">
-                <meeting days="" time="T" location="Math, Business, Computing Ctr 303" />
+                <meeting days="T" time="05:45pm - 09:20pm" location="Math, Business, Computing Ctr 303" date="09/08-12/12" />
             </section>
         </course>
         <course name="BUS A212 - Practical Investmt Mgmt">
             <section status="OPEN" im="02" crn="25886" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A212&amp;vterm=202670&amp;vcrn=25886&amp;vcoll=OC" cred="3.00" instructor="David  Plisco" date="09/09-12/12" weeks="14">
-                <meeting days="" time="" location="Math, Business, Computing Ctr 303" />
+                <meeting days="W" time="05:30pm - 09:35pm" location="Math, Business, Computing Ctr 303" date="09/09-12/12" />
             </section>
         </course>
         <course name="BUS A239 - Professionl Communicatn">
             <section status="OPEN" im="02" crn="20002" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A239&amp;vterm=202670&amp;vcrn=20002&amp;vcoll=OC" cred="3.00" instructor="Keith  Krallman" date="09/08-12/08" weeks="14">
-                <meeting days="" time="T" location="Math, Business, Computing Ctr 301" />
+                <meeting days="T" time="05:45pm - 09:20pm" location="Math, Business, Computing Ctr 301" date="09/08-12/08" />
             </section>
         </course>
     </subject>
     <subject name="CDE - Child Development / Education">
         <course name="CDE A199 - Current Issues in E C">
             <section status="OPEN" im="02" crn="22818" crn_link="pw_pub_sched.p_course_popup?vsub=CDE&amp;vcrse=A199&amp;vterm=202670&amp;vcrn=22818&amp;vcoll=OC" cred="1.00" instructor="Devan  Upchurch" date="10/09-10/09" weeks="3">
-                <meeting days="" time="" location="Consumer Sciences and Design 108" />
+                <meeting days="F" time="05:30pm - 08:30pm" location="Consumer Sciences and Design 108" date="10/09-10/09" />
+                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="10/10-10/10" />
+                <meeting days="F" time="05:30pm - 08:30pm" location="Consumer Sciences and Design 108" date="10/23-10/23" />
+                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="10/24-10/24" />
             </section>
         </course>
         <course name="CDE A262 - Disaster Preparedness">
             <section status="OPEN" im="02" crn="22823" crn_link="pw_pub_sched.p_course_popup?vsub=CDE&amp;vcrse=A262&amp;vterm=202670&amp;vcrn=22823&amp;vcoll=OC" cred="0.50" instructor="Karen  Robinson" date="09/25-09/25" weeks="1">
-                <meeting days="" time="" location="Consumer Sciences and Design 108" />
+                <meeting days="F" time="05:30pm - 08:30pm" location="Consumer Sciences and Design 108" date="09/25-09/25" />
+                <meeting days="S" time="09:00am - 03:00pm" location="Consumer Sciences and Design 108" date="09/26-09/26" />
             </section>
         </course>
     </subject>
     <subject name="CHT - Computer / High Technology">
         <course name="CHT A095N - AI for Professionals">
             <section status="OPEN" im="02" crn="25822" crn_link="pw_pub_sched.p_course_popup?vsub=CHT&amp;vcrse=A095N&amp;vterm=202670&amp;vcrn=25822&amp;vcoll=OC" cred="0.00" instructor="Eric  Wilson" date="10/20-12/08" weeks="8">
-                <meeting days="" time="T" location="Math, Business, Computing Ctr 126" />
+                <meeting days="T" time="05:40pm - 07:45pm" location="Math, Business, Computing Ctr 126" date="10/20-12/08" />
             </section>
         </course>
     </subject>
     <subject name="COS - Consumer Studies">
         <course name="COS A001N - Intro to Customer Service">
             <section status="OPEN" im="02" crn="25247" crn_link="pw_pub_sched.p_course_popup?vsub=COS&amp;vcrse=A001N&amp;vterm=202670&amp;vcrn=25247&amp;vcoll=OC" cred="0.00" instructor="Rich  Estes" date="10/19-11/09" weeks="4">
-                <meeting days="M" time="" location="Orange Coast LIVEONLINE" />
+                <meeting days="M W" time="06:00pm - 07:25pm" location="Orange Coast LIVEONLINE" date="10/19-11/09" />
             </section>
         </course>
         <course name="COS A002N - Customer Serv &amp; Retail Emply">
             <section status="OPEN" im="02" crn="22685" crn_link="pw_pub_sched.p_course_popup?vsub=COS&amp;vcrse=A002N&amp;vterm=202670&amp;vcrn=22685&amp;vcoll=OC" cred="0.00" instructor="Sibley  Sabori" date="10/02-10/23" weeks="4">
-                <meeting days="" time="" location="Consumer Sciences and Design 102" />
+                <meeting days="F" time="09:00am - 11:50am" location="Consumer Sciences and Design 102" date="10/02-10/23" />
             </section>
         </course>
     </subject>
     <subject name="ELL - English Language Learning">
         <course name="ELL A020N - ELL for US Citizenship">
             <section status="OPEN" im="71" crn="25547" crn_link="pw_pub_sched.p_course_popup?vsub=ELL&amp;vcrse=A020N&amp;vterm=202670&amp;vcrn=25547&amp;vcoll=OC" cred="0.00" instructor="Linda  Salim" date="10/20-11/12" weeks="4">
-                <meeting days="" time="T" location="Orange Coast LIVEONLINE" />
+                <meeting days="T Th" time="06:00pm - 08:05pm" location="Orange Coast LIVEONLINE" date="10/20-11/12" />
+                <meeting days="T" time="03:00pm - 04:45pm" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
+                <meeting days="T" time="04:45pm - 05:50pm" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
             </section>
         </course>
     </subject>
@@ -91,7 +99,10 @@
         <course name="ESL A052 - Adv Academic Read and Write 1" />
         <course name="ESL A100 - ESL College Composition">
             <section status="OPEN" im="LL" crn="25080" crn_link="pw_pub_sched.p_course_popup?vsub=ESL&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=25080&amp;vcoll=OC" cred="3.00" instructor="Teruo  Masuda" date="09/07-12/12" weeks="14">
-                <meeting days="M" time="" location="Lit &amp; Lang and Social Sciences 100" />
+                <meeting days="M W" time="09:00am - 10:10am" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
+                <meeting days="M W" time="10:10am - 12:15pm" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
+                <meeting days="Th" time="12:45pm - 03:35pm" location="Lit &amp; Lang and Social Sciences 100" date="09/07-12/12" />
+                <meeting days="M" time="01:00pm - 03:50pm" location="Lit &amp; Lang and Social Sciences 103" date="11/09-11/09" />
             </section>
         </course>
         <course name="ESL A192 - Adv Acad Rdng Resrch Wrtng Hum" />
@@ -102,7 +113,7 @@
     <subject name="HTT - Hospitality, Travel / Tourism">
         <course name="HTT A003N - Careers Hospitality/Tourism NC">
             <section status="OPEN" im="71" crn="24256" crn_link="pw_pub_sched.p_course_popup?vsub=HTT&amp;vcrse=A003N&amp;vterm=202670&amp;vcrn=24256&amp;vcoll=OC" cred="0.00" instructor="Rich  Estes" date="11/16-12/09" weeks="4">
-                <meeting days="M" time="" location="Orange Coast LIVEONLINE" />
+                <meeting days="M W" time="06:00pm - 07:15pm" location="Orange Coast LIVEONLINE" date="11/16-12/09" />
             </section>
         </course>
     </subject>
@@ -113,31 +124,35 @@
     <subject name="LEAD - Leadership">
         <course name="LEAD A180 - Personal Leadership">
             <section status="OPEN" im="02" crn="22569" crn_link="pw_pub_sched.p_course_popup?vsub=LEAD&amp;vcrse=A180&amp;vterm=202670&amp;vcrn=22569&amp;vcoll=OC" cred="3.00" instructor="Keith  Krallman" date="09/10-12/12" weeks="14">
-                <meeting days="" time="" location="Math, Business, Computing Ctr 207" />
+                <meeting days="Th" time="05:45pm - 09:50pm" location="Math, Business, Computing Ctr 207" date="09/10-12/12" />
             </section>
         </course>
     </subject>
     <subject name="MGMT - Management">
         <course name="MGMT A239 - Professionl Communicatn">
             <section status="OPEN" im="02" crn="20003" crn_link="pw_pub_sched.p_course_popup?vsub=MGMT&amp;vcrse=A239&amp;vterm=202670&amp;vcrn=20003&amp;vcoll=OC" cred="3.00" instructor="Keith  Krallman" date="09/08-12/08" weeks="14">
-                <meeting days="" time="T" location="Math, Business, Computing Ctr 301" />
+                <meeting days="T" time="05:45pm - 09:20pm" location="Math, Business, Computing Ctr 301" date="09/08-12/08" />
             </section>
         </course>
     </subject>
     <subject name="PHMT - Pharmacy Technician">
         <course name="PHMT A090N - Pharmacy Tech Cert Exam Prep">
             <section status="OPEN" im="02" crn="26106" crn_link="pw_pub_sched.p_course_popup?vsub=PHMT&amp;vcrse=A090N&amp;vterm=202670&amp;vcrn=26106&amp;vcoll=OC" cred="0.00" instructor="Phoebe  Mai" date="11/09-12/07" weeks="5">
-                <meeting days="M" time="" location="C &amp; L 110" />
+                <meeting days="M" time="08:30am - 10:00am" location="C &amp; L 110" date="11/09-12/07" />
             </section>
             <section status="OPEN" im="02" crn="25229" crn_link="pw_pub_sched.p_course_popup?vsub=PHMT&amp;vcrse=A090N&amp;vterm=202670&amp;vcrn=25229&amp;vcoll=OC" cred="0.00" instructor="Richie  Cariaso" date="11/13-12/11" weeks="5">
-                <meeting days="" time="" location="C &amp; L 110" />
+                <meeting days="F" time="06:00pm - 08:05pm" location="C &amp; L 110" date="11/13-12/11" />
             </section>
         </course>
     </subject>
     <subject name="PHYS - Physics">
         <course name="PHYS A110 - Conceptual Physics">
             <section status="OPEN" im="02" crn="21019" crn_link="pw_pub_sched.p_course_popup?vsub=PHYS&amp;vcrse=A110&amp;vterm=202670&amp;vcrn=21019&amp;vcoll=OC" cred="3.00" instructor="Alexander  Vaucher" date="09/07-11/24" weeks="12">
-                <meeting days="" time="T" location="Lewis Center 201" />
+                <meeting days="T Th" time="03:25pm - 05:35pm" location="Lewis Center 201" date="09/07-11/24" />
+                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="09/26-09/26" />
+                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="10/10-10/10" />
+                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="10/24-10/24" />
+                <meeting days="S" time="09:00am - 01:15pm" location="Orange Coast LIVEONLINE" date="11/07-11/07" />
             </section>
         </course>
     </subject>
@@ -148,7 +163,7 @@
         <course name="RSPC A276 - Clinical Lab 3" />
         <course name="RSPC A279 - Physician Series 1">
             <section status="OPEN" im="71" crn="21149" crn_link="pw_pub_sched.p_course_popup?vsub=RSPC&amp;vcrse=A279&amp;vterm=202670&amp;vcrn=21149&amp;vcoll=OC" cred="0.50" instructor="Alison  Riggio" date="09/09-10/28" weeks="8">
-                <meeting days="" time="" location="Orange Coast LIVEONLINE" />
+                <meeting days="W" time="04:00pm - 05:00pm" location="Orange Coast LIVEONLINE" date="09/09-10/28" />
             </section>
         </course>
     </subject>
