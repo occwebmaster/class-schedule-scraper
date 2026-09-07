@@ -156,7 +156,7 @@ async def run_scraper():
                   meet_days = " ".join(meet_days_list)
                   meet_time = cols[8].get_text(strip=True) if len(cols) > 8 else ""
                   meet_loc = cols[9].get_text(strip=True) if len(cols) > 9 else ""
-                  meet_date = cols[15].get_text(strip=True) if len(cols) > 15 else ""
+                  meet_date = cols[11].get_text(strip=True) if len(cols) > 11 else ""
               
               ET.SubElement(
                   current_section_elem,
