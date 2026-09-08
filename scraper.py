@@ -16,7 +16,7 @@ async def run_scraper():
 
     # 2. Select filter parameters
     # Part of Term -> "4" (Non Full Term)
-    await page.select_option('select[name="sel_ptrm"]', '4')
+    await page.select_option('select[name="sel_ptrm"]', '%')
 
     # Subject -> "%" (<all>)
     await page.select_option('select[name="sel_subj"]', '%')
