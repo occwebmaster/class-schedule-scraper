@@ -1,3 +1,4 @@
+from datetime import datetime
 import asyncio
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
@@ -38,9 +39,12 @@ async def run_scraper():
     html_content = await page.content()
     await browser.close()
 
-    # 5. Parse HTML and build XML structure
+    # 5. Get current time, parse HTML and build XML structure
+    now = datetime.now()
+    formatted_now = now.strftime("%Y-%m-%d %H:%M:%S")
+    
     soup = BeautifulSoup(html_content, "html.parser")
-    root = ET.Element("schedule", term="OCC Fall 2026")
+    root = ET.Element("schedule", term="OCC Fall 2026", current_time=formatted_now)
 
     current_subject_elem = None
     current_course_elem = None
