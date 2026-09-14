@@ -1,9 +1,10 @@
 name: Daily Schedule Scraper
 
 on:
-  # schedule:
+  schedule:
     # Runs automatically every day at 19:00 UTC (noon time PDT)
     # - cron: '0 19 * * *'
+    - cron: '15 0,9,12,15,18 * * *'
   # Allows manual execution from the GitHub Actions UI
   workflow_dispatch:
 
