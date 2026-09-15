@@ -1,3 +1,4 @@
+import re
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import asyncio
@@ -51,6 +52,9 @@ async def run_scraper():
     current_course_elem = None
     current_section_elem = None
 
+    # Regex to check if the second word has 3 digits followed immediately by 'N'
+    noncredit_pattern = re.compile(r"^\S+\s+[A-Za-z]?\d{3}N\b")
+
     # Parse rows from the schedule table
     for row in soup.find_all("tr"):
       # Subject header rows
@@ -68,7 +72,6 @@ async def run_scraper():
             current_subject_elem, "course", name=crn_td.get_text(strip=True)
         )
         # CRUCIAL FIX: Reset the active section when a new course starts
-        # This prevents meetings from bleeding into the previous course
         current_section_elem = None 
         continue
 
@@ -87,14 +90,14 @@ async def run_scraper():
         cred = cols[4].get_text(strip=True) if len(cols) > 4 else ""
         course_name = current_course_elem.attrib.get("name", "").strip()
 
-        # Check if section ends with "N" and has 0 credit (no credit)
+        # Check if credits equal 0 and course code matches the 3-digit + N pattern
         try:
             is_zero_credit = float(cred) == 0.0
         except ValueError:
             is_zero_credit = False
 
-        if course_name.endswith("N") and is_zero_credit:
-            current_section_elem = None  # Skip primary row & subsequent meeting rows
+        if is_zero_credit and noncredit_pattern.search(course_name):
+            current_section_elem = None  # Skip section and its future meeting rows
             continue
 
         status = cols[0].get_text(strip=True)
