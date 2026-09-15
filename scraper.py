@@ -84,6 +84,19 @@ async def run_scraper():
       
       # --- PRIMARY SECTION DATA ROW ---
       if is_primary_row and current_course_elem is not None:
+        cred = cols[4].get_text(strip=True) if len(cols) > 4 else ""
+        course_name = current_course_elem.attrib.get("name", "").strip()
+
+        # Check if section ends with "N" and has 0 credit (no credit)
+        try:
+            is_zero_credit = float(cred) == 0.0
+        except ValueError:
+            is_zero_credit = False
+
+        if course_name.endswith("N") and is_zero_credit:
+            current_section_elem = None  # Skip primary row & subsequent meeting rows
+            continue
+
         status = cols[0].get_text(strip=True)
         im = cols[1].get_text(strip=True)
         crn = crn_text
@@ -97,8 +110,6 @@ async def run_scraper():
                 crn_link = raw_href.split("winOpen('")[1].split("')")[0]
             else:
                 crn_link = raw_href
-                
-        cred = cols[4].get_text(strip=True) if len(cols) > 4 else ""
         
         # Identify if this row matches the colspan="8" format for timeslots (e.g. TBA)
         is_primary_colspan_8 = (len(cols) > 5 and cols[5].get("colspan") == "8")
