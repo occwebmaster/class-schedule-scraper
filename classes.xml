@@ -1,11 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-09-15 15:28:08 PDT">
-    <subject name="ADLT - Older Adult/Emeritus">
-        <course name="ADLT A041N - Spanish for Travel" />
-    </subject>
+<schedule term="OCC Fall 2026" current_time="2026-09-15 15:40:49 PDT">
     <subject name="ALH - Allied Health">
-        <course name="ALH A002N - Personal Care Aide II" />
-        <course name="ALH A009N - PCA: Assist Alzheimer/Dementia" />
         <course name="ALH A115 - Patient Care">
             <section status="OPEN" im="LL" crn="22384" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=22384&amp;vcoll=OC" cred="2.00" instructor="Alison  Riggio" date="10/19-12/12" weeks="8">
                 <meeting days="M W" time="11:10am - 12:40pm" location="Orange Coast LIVEONLINE" date="10/19-12/12" />
@@ -75,11 +70,6 @@
             </section>
         </course>
     </subject>
-    <subject name="CHT - Computer / High Technology">
-        <course name="CHT A002N - Comp Basics - Nav the Internet" />
-        <course name="CHT A030N - Computer Skills for 21st Cntry" />
-        <course name="CHT A095N - AI for Professionals" />
-    </subject>
     <subject name="CIS - Computer Information Systems">
         <course name="CIS A100 - Intro Computer Applications">
             <section status="OPEN" im="72" crn="26155" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=26155&amp;vcoll=OC" cred="3.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
@@ -111,8 +101,6 @@
         </course>
     </subject>
     <subject name="COS - Consumer Studies">
-        <course name="COS A001N - Intro to Customer Service" />
-        <course name="COS A002N - Customer Serv &amp; Retail Emply" />
         <course name="COS A180 - Life Management">
             <section status="OPEN" im="02" crn="21301" crn_link="pw_pub_sched.p_course_popup?vsub=COS&amp;vcrse=A180&amp;vterm=202670&amp;vcrn=21301&amp;vcoll=OC" cred="3.00" instructor="Sibley  Sabori" date="09/21-12/12" weeks="12">
                 <meeting days="T Th" time="09:35am - 11:50am" location="Lit &amp; Lang and Social Sciences 253" date="09/21-12/12" />
@@ -173,14 +161,6 @@
             </section>
         </course>
     </subject>
-    <subject name="ELL - English Language Learning">
-        <course name="ELL A020N - ELL for US Citizenship" />
-        <course name="ELL A028N - Speaking About U.S. Culture 1" />
-        <course name="ELL A035N - Intermediate Pronunciation" />
-        <course name="ELL A048N - Speaking About U.S. Culture 2" />
-        <course name="ELL A049N - Speaking About U.S. Culture 3" />
-        <course name="ELL A055N - Advanced Pronunciation" />
-    </subject>
     <subject name="FASH - Fashion">
         <course name="FASH A102 - Industrial Sewing Techniques">
             <section status="OPEN" im="LL" crn="22711" crn_link="pw_pub_sched.p_course_popup?vsub=FASH&amp;vcrse=A102&amp;vterm=202670&amp;vcrn=22711&amp;vcoll=OC" cred="1.50" instructor="Donna  Dickens" date="10/19-12/12" weeks="8">
@@ -221,9 +201,6 @@
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
-    </subject>
-    <subject name="HTT - Hospitality, Travel / Tourism">
-        <course name="HTT A003N - Careers Hospitality/Tourism NC" />
     </subject>
     <subject name="KIN - Kinesiology">
         <course name="KIN A203 - First Aid and CPR">
@@ -269,23 +246,12 @@
             </section>
         </course>
     </subject>
-    <subject name="MATH - Mathematics">
-        <course name="MATH A060N - Math Skills Lib Art Math/Stats" />
-        <course name="MATH A061N - Math Skills College Algebra" />
-        <course name="MATH A062N - Math Skills for Trigonometry" />
-        <course name="MATH A064N - Math Skills Business Calculus" />
-        <course name="MATH A067N - Math Skills for Precalculus" />
-        <course name="MATH A068N - Math Skills for Calculus" />
-    </subject>
     <subject name="MGMT - Management">
         <course name="MGMT A115 - Human Relations &amp; Supv">
             <section status="OPEN" im="72" crn="22731" crn_link="pw_pub_sched.p_course_popup?vsub=MGMT&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=22731&amp;vcoll=OC" cred="3.00" instructor="Karen  Klammer" date="10/19-12/12" weeks="8">
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
-    </subject>
-    <subject name="MRSC - Marine Science">
-        <course name="MRSC A020N - Aquarium and Aquaculture Exp" />
     </subject>
     <subject name="MUS - Music">
         <course name="MUS A100 - Hist &amp; Appr of West Clas Music">
@@ -305,19 +271,12 @@
             </section>
         </course>
     </subject>
-    <subject name="PHMT - Pharmacy Technician">
-        <course name="PHMT A080N - Sterile &amp; Non-Sterile Compound" />
-        <course name="PHMT A090N - Pharmacy Tech Cert Exam Prep" />
-    </subject>
     <subject name="PSYC - Psychology">
         <course name="PSYC A250 - Psychobiology">
             <section status="OPEN" im="72" crn="20427" crn_link="pw_pub_sched.p_course_popup?vsub=PSYC&amp;vcrse=A250&amp;vterm=202670&amp;vcrn=20427&amp;vcoll=OC" cred="3.00" instructor="Melissa  Ferguson" date="10/19-12/12" weeks="8">
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
-    </subject>
-    <subject name="PUBH - Public Health">
-        <course name="PUBH A001N - Community Health Worker I" />
     </subject>
     <subject name="RADT - Radiologic Technology">
         <course name="RADT A171 - Clinical Lab 1">
@@ -355,8 +314,5 @@
                 <meeting days="T Th" time="12:45pm - 02:55pm" location="Arts Center 216" date="09/21-12/12" />
             </section>
         </course>
-    </subject>
-    <subject name="TUTR - Tutoring">
-        <course name="TUTR A050N - Supervised Tutoring Noncredit" />
     </subject>
 </schedule>
