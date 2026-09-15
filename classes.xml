@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-09-14 17:33:50 PDT">
+<schedule term="OCC Fall 2026" current_time="2026-09-15 02:31:54 PDT">
     <subject name="ADLT - Older Adult/Emeritus">
         <course name="ADLT A041N - Spanish for Travel">
             <section status="OPEN" im="02" crn="25727" crn_link="pw_pub_sched.p_course_popup?vsub=ADLT&amp;vcrse=A041N&amp;vterm=202670&amp;vcrn=25727&amp;vcoll=OC" cred="0.00" instructor="Ivon  Saldana" date="09/28-10/28" weeks="5">
@@ -55,13 +55,6 @@
         <course name="APT A151 - Unmanned Aircraft Systems Lab">
             <section status="OPEN" im="04" crn="25891" crn_link="pw_pub_sched.p_course_popup?vsub=APT&amp;vcrse=A151&amp;vterm=202670&amp;vcrn=25891&amp;vcoll=OC" cred="1.00" instructor="Joel  Jones" date="10/19-12/12" weeks="8">
                 <meeting days="S" time="10:00am - 05:25pm" location="OCC Offsite COMM SITE" date="10/19-12/12" />
-            </section>
-        </course>
-    </subject>
-    <subject name="ARCH - Architecture">
-        <course name="ARCH A101 - Intro Environ Sustainability">
-            <section status="OPEN" im="72" crn="26112" crn_link="pw_pub_sched.p_course_popup?vsub=ARCH&amp;vcrse=A101&amp;vterm=202670&amp;vcrn=26112&amp;vcoll=OC" cred="1.00" instructor="David  Molinaro" date="10/19-12/12" weeks="8">
-                <meeting days="" time="2.3 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
     </subject>
@@ -316,6 +309,13 @@
         <course name="LIBR A103 - College Research Skills">
             <section status="OPEN" im="72" crn="23044" crn_link="pw_pub_sched.p_course_popup?vsub=LIBR&amp;vcrse=A103&amp;vterm=202670&amp;vcrn=23044&amp;vcoll=OC" cred="1.00" instructor="Sukena  Taibjee" date="10/19-12/12" weeks="8">
                 <meeting days="" time="2.3 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="LRNG - Learning">
+        <course name="LRNG A040 - Learning Skills-Writing">
+            <section status="OPEN" im="02" crn="24108" crn_link="pw_pub_sched.p_course_popup?vsub=LRNG&amp;vcrse=A040&amp;vterm=202670&amp;vcrn=24108&amp;vcoll=OC" cred="3.00" instructor="Amra  Pepic Koubati" date="08/24-12/12" weeks="16">
+                <meeting days="T Th" time="09:00am - 10:25am" location="Lit &amp; Lang and Social Sciences 122" date="08/24-12/12" />
             </section>
         </course>
     </subject>
