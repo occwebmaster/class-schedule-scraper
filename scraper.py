@@ -41,38 +41,47 @@ async def run_scraper():
     html_content = await page.content()
     await browser.close()
 
-    # 5. Get current time, parse HTML and build XML structure
+    # 5. Get current time & parse HTML
     now_pdt = datetime.now(ZoneInfo("America/Los_Angeles"))
     formatted_pdt = now_pdt.strftime("%Y-%m-%d %H:%M:%S %Z")
     
     soup = BeautifulSoup(html_content, "html.parser")
-    root = ET.Element("schedule", term="OCC Fall 2026", current_time=formatted_pdt)
 
-    current_subject_elem = None
-    current_course_elem = None
-    current_section_elem = None
-
-    # Regex to check if the second word has 3 digits followed immediately by 'N'
+    # Regex pattern: second word contains 3 digits followed by 'N'
     noncredit_pattern = re.compile(r"^\S+\s+[A-Za-z]?\d{3}N\b")
 
-    # Parse rows from the schedule table
+    subjects = []
+    current_subject = None
+    current_course = None
+    current_section = None
+
+    # Parse rows into temporary data structure
     for row in soup.find_all("tr"):
-      # Subject header rows
-      subj_td = row.find("td", class_="subject_header")
-      if subj_td:
-        current_subject_elem = ET.SubElement(
-            root, "subject", name=subj_td.get_text(strip=True)
-        )
+      # 1. Skip rows containing <th> elements
+      if row.find("th"):
         continue
 
-      # Course header rows
+      # 2. Subject header rows
+      subj_td = row.find("td", class_="subject_header")
+      if subj_td:
+        current_subject = {
+            "name": subj_td.get_text(strip=True),
+            "courses": []
+        }
+        subjects.append(current_subject)
+        current_course = None
+        current_section = None
+        continue
+
+      # 3. Course header rows (crn_header)
       crn_td = row.find("td", class_="crn_header")
-      if crn_td and current_subject_elem is not None:
-        current_course_elem = ET.SubElement(
-            current_subject_elem, "course", name=crn_td.get_text(strip=True)
-        )
-        # CRUCIAL FIX: Reset the active section when a new course starts
-        current_section_elem = None 
+      if crn_td and current_subject is not None:
+        current_course = {
+            "name": crn_td.get_text(strip=True),
+            "sections": []
+        }
+        current_subject["courses"].append(current_course)
+        current_section = None 
         continue
 
       cols = row.find_all("td")
@@ -86,18 +95,18 @@ async def run_scraper():
       is_primary_row = bool(crn_text.isdigit())
       
       # --- PRIMARY SECTION DATA ROW ---
-      if is_primary_row and current_course_elem is not None:
+      if is_primary_row and current_course is not None:
         cred = cols[4].get_text(strip=True) if len(cols) > 4 else ""
-        course_name = current_course_elem.attrib.get("name", "").strip()
+        course_name = current_course["name"]
 
-        # Check if credits equal 0 and course code matches the 3-digit + N pattern
         try:
             is_zero_credit = float(cred) == 0.0
         except ValueError:
             is_zero_credit = False
 
+        # Skip section if it is 0 credit and matches noncredit course code pattern
         if is_zero_credit and noncredit_pattern.search(course_name):
-            current_section_elem = None  # Skip section and its future meeting rows
+            current_section = None
             continue
 
         status = cols[0].get_text(strip=True)
@@ -135,33 +144,29 @@ async def run_scraper():
             date = cols[19].get_text(strip=True) if len(cols) > 19 else ""
             weeks = cols[20].get_text(strip=True) if len(cols) > 20 else ""
 
-        if crn:  # New section row
-          current_section_elem = ET.SubElement(
-              current_course_elem,
-              "section",
-              status=status,
-              im=im,
-              crn=crn,
-              crn_link=crn_link,
-              cred=cred,
-              instructor=instructor,
-              date=date,
-              weeks=weeks,
-          )
-          # Initial meeting element attached to the section
-          ET.SubElement(
-              current_section_elem,
-              "meeting",
-              days=days,
-              time=time_slot,
-              location=location,
-              date=date
-          )
+        current_section = {
+            "status": status,
+            "im": im,
+            "crn": crn,
+            "crn_link": crn_link,
+            "cred": cred,
+            "instructor": instructor,
+            "date": date,
+            "weeks": weeks,
+            "meetings": [
+                {
+                    "days": days,
+                    "time": time_slot,
+                    "location": location,
+                    "date": date
+                }
+            ]
+        }
+        current_course["sections"].append(current_section)
 
       # --- ADDITIONAL MEETING ROW DETECTION ---
-      elif first_col.get("colspan") == "5" and current_section_elem is not None:
+      elif first_col.get("colspan") == "5" and current_section is not None:
           try:
-              # Check for the secondary meeting colspan="8" edge-case
               is_addl_colspan_8 = (len(cols) > 1 and cols[1].get("colspan") == "8")
               
               if is_addl_colspan_8:
@@ -170,25 +175,57 @@ async def run_scraper():
                   meet_loc = cols[2].get_text(strip=True) if len(cols) > 2 else ""
                   meet_date = cols[4].get_text(strip=True) if len(cols) > 4 else ""
               else:
-                  # Gather standard days from columns 1 to 7
                   meet_days_list = [cols[i].get_text(strip=True) for i in range(1, 8) if i < len(cols) and cols[i].get_text(strip=True)]
                   meet_days = " ".join(meet_days_list)
                   meet_time = cols[8].get_text(strip=True) if len(cols) > 8 else ""
                   meet_loc = cols[9].get_text(strip=True) if len(cols) > 9 else ""
                   meet_date = cols[11].get_text(strip=True) if len(cols) > 11 else ""
               
-              ET.SubElement(
-                  current_section_elem,
-                  "meeting",
-                  days=meet_days,
-                  time=meet_time,
-                  location=meet_loc,
-                  date=meet_date
-              )
+              current_section["meetings"].append({
+                  "days": meet_days,
+                  "time": meet_time,
+                  "location": meet_loc,
+                  "date": meet_date
+              })
           except IndexError:
               continue
 
-    # 6. Export formatted XML tree to file
+    # 6. Build final XML tree, pruning empty courses and empty subjects
+    root = ET.Element("schedule", term="OCC Fall 2026", current_time=formatted_pdt)
+
+    for subj in subjects:
+        # Keep courses with at least one valid section
+        valid_courses = [c for c in subj["courses"] if c["sections"]]
+        if not valid_courses:
+            continue  # Omit entire subject if all sections were non-credit
+
+        subj_elem = ET.SubElement(root, "subject", name=subj["name"])
+        for course in valid_courses:
+            course_elem = ET.SubElement(subj_elem, "course", name=course["name"])
+            for sec in course["sections"]:
+                sec_elem = ET.SubElement(
+                    course_elem,
+                    "section",
+                    status=sec["status"],
+                    im=sec["im"],
+                    crn=sec["crn"],
+                    crn_link=sec["crn_link"],
+                    cred=sec["cred"],
+                    instructor=sec["instructor"],
+                    date=sec["date"],
+                    weeks=sec["weeks"],
+                )
+                for meet in sec["meetings"]:
+                    ET.SubElement(
+                        sec_elem,
+                        "meeting",
+                        days=meet["days"],
+                        time=meet["time"],
+                        location=meet["location"],
+                        date=meet["date"]
+                    )
+
+    # 7. Export formatted XML tree to file
     tree = ET.ElementTree(root)
     ET.indent(tree, space="    ")
     tree.write("classes.xml", encoding="utf-8", xml_declaration=True)
