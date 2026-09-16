@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-09-15 18:27:00 PDT">
+<schedule term="OCC Fall 2026" current_time="2026-09-16 00:30:08 PDT">
     <subject name="ALH - Allied Health">
         <course name="ALH A115 - Patient Care">
             <section status="OPEN" im="LL" crn="22384" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=22384&amp;vcoll=OC" cred="2.00" instructor="Alison  Riggio" date="10/19-12/12" weeks="8">
@@ -285,6 +285,13 @@
             </section>
             <section status="OPEN" im="20" crn="23106" crn_link="pw_pub_sched.p_course_popup?vsub=RADT&amp;vcrse=A171&amp;vterm=202670&amp;vcrn=23106&amp;vcoll=OC" cred="2.00" instructor="Jennica  Mendiola" date="10/19-12/12" weeks="8">
                 <meeting days="M W" time="07:30am - 02:35pm" location="OCC Offsite UCIMC" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="RE - Real Estate">
+        <course name="RE A130 - Real Estate Practice">
+            <section status="OPEN" im="72" crn="20176" crn_link="pw_pub_sched.p_course_popup?vsub=RE&amp;vcrse=A130&amp;vterm=202670&amp;vcrn=20176&amp;vcoll=OC" cred="3.00" instructor="Jennifer  Grootegoed" date="10/19-12/12" weeks="8">
+                <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
     </subject>
