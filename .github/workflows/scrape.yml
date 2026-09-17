@@ -4,8 +4,8 @@ on:
   # schedule:
     # Runs automatically every day at 19:00 UTC (noon time PDT -7hrs)
     # - cron: '0 19 * * *'
-    # - cron: '5 1,4,7,13,16,19,22 * * *'
-    # - cron: '15 1,7,16,19,22 * * *'
+    # - cron: '1 1,4,7,13,16,19,22 * * *'
+    # - cron: '1 1,7,16,19,22 * * *'
   # Allows manual execution from the GitHub Actions UI
   workflow_dispatch:
 
