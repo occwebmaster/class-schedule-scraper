@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-09-16 15:27:03 PDT">
+<schedule term="OCC Fall 2026" current_time="2026-09-16 17:17:40 PDT">
     <subject name="ALH - Allied Health">
         <course name="ALH A115 - Patient Care">
             <section status="OPEN" im="LL" crn="22384" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=22384&amp;vcoll=OC" cred="2.00" instructor="Alison  Riggio" date="10/19-12/12" weeks="8">
@@ -182,6 +182,14 @@
         <course name="FBM A175 - Food Law and Policy">
             <section status="OPEN" im="72" crn="24238" crn_link="pw_pub_sched.p_course_popup?vsub=FBM&amp;vcrse=A175&amp;vterm=202670&amp;vcrn=24238&amp;vcoll=OC" cred="2.00" instructor="Sarah  Dhillon" date="10/19-12/12" weeks="8">
                 <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="FILM - Film / Television">
+        <course name="FILM A100 - History &amp; Apprec of the Cinema">
+            <section status="OPEN" im="HY" crn="26202" crn_link="pw_pub_sched.p_course_popup?vsub=FILM&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=26202&amp;vcoll=OC" cred="3.00" instructor="Thomas  Shimanek" date="10/19-12/12" weeks="8">
+                <meeting days="" time="3.75 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+                <meeting days="M" time="06:00pm - 09:00pm" location="Fine Arts 116" date="10/19-12/12" />
             </section>
         </course>
     </subject>
