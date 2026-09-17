@@ -31,9 +31,32 @@ COURSE_WHITELIST = {
 }
 
 
+def build_normalized_course_set(courses):
+    """
+    Normalizes course whitelist codes. OCC schedules use an 'A' prefix for course numbers
+    (e.g., 'CIS A100'), while catalog lists may use 'CIS 100'. This set matches both formats.
+    """
+    norm_set = set()
+    for course in courses:
+        clean_course = course.strip().upper()
+        norm_set.add(clean_course)
+        
+        # Match pattern: SUBJECT (optional 'A') NUMBER (optional suffix)
+        m = re.match(r"^([A-Z]+)\s+(A?)(\d+.*)$", clean_course)
+        if m:
+            subj, alpha_a, rest = m.groups()
+            if alpha_a == 'A':
+                norm_set.add(f"{subj} {rest}")
+            else:
+                norm_set.add(f"{subj} A{rest}")
+    return norm_set
+
+
 async def run_scraper():
+    normalized_subjects = {s.strip().upper() for s in SUBJECT_WHITELIST}
+    normalized_courses = build_normalized_course_set(COURSE_WHITELIST)
+
     async with async_playwright() as p:
-        # Launch headless browser
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
 
@@ -84,10 +107,10 @@ async def run_scraper():
             if subj_td:
                 subj_text = subj_td.get_text(strip=True)
                 subj_words = subj_text.split()
-                subj_code = subj_words[0] if subj_words else ""
+                subj_code = subj_words[0].upper() if subj_words else ""
 
-                # Match subject by first word
-                subject_is_whitelisted = subj_code in SUBJECT_WHITELIST
+                # Step A: Check if subject is whitelisted
+                subject_is_whitelisted = subj_code in normalized_subjects
 
                 current_subject = {
                     "name": subj_text,
@@ -102,21 +125,29 @@ async def run_scraper():
             crn_td = row.find("td", class_="crn_header")
             if crn_td and current_subject is not None:
                 crn_text = crn_td.get_text(strip=True)
-                crn_words = crn_text.split()
-                course_code = " ".join(crn_words[:2]) if len(crn_words) >= 2 else ""
 
-                # Match course by first two words
-                course_is_whitelisted = course_code in COURSE_WHITELIST
-
-                # Include course if subject is whitelisted OR if specific course is whitelisted
-                if subject_is_whitelisted or course_is_whitelisted:
+                # Step B: Record course logic
+                if subject_is_whitelisted:
+                    # If subject matched, automatically record all courses under it
                     current_course = {
                         "name": crn_text,
                         "sections": []
                     }
                     current_subject["courses"].append(current_course)
                 else:
-                    current_course = None
+                    # Subject did NOT match -> Check if course code matches COURSE_WHITELIST
+                    # Robust extraction handles formats like "CIS A100", "CIS A100 - Intro", "CIS 100"
+                    match = re.match(r"^([A-Za-z]+\s+[A-Za-z]?\d+[A-Za-z]?)", crn_text)
+                    extracted_course_code = match.group(1).upper() if match else " ".join(crn_text.split()[:2]).upper()
+
+                    if extracted_course_code in normalized_courses:
+                        current_course = {
+                            "name": crn_text,
+                            "sections": []
+                        }
+                        current_subject["courses"].append(current_course)
+                    else:
+                        current_course = None
 
                 current_section = None 
                 continue
@@ -220,7 +251,7 @@ async def run_scraper():
                 except IndexError:
                     continue
 
-        # 6. Build final XML tree, pruning subjects without valid courses
+        # 6. Build final XML tree, pruning empty subjects
         root = ET.Element("schedule", term="OCC Fall 2026", current_time=formatted_pdt)
 
         for subj in subjects:
@@ -254,7 +285,7 @@ async def run_scraper():
                             date=meet["date"]
                         )
 
-        # 7. Export formatted XML tree to file
+        # 7. Export XML tree
         tree = ET.ElementTree(root)
         ET.indent(tree, space="    ")
         tree.write("classes.xml", encoding="utf-8", xml_declaration=True)
