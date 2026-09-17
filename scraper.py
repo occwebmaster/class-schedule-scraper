@@ -13,21 +13,25 @@ SUBJECT_WHITELIST = {
 }
 
 COURSE_WHITELIST = {
-    "CIS 100",
-    "CIS 111",
-    "COS 180",
-    "FASH 102",
-    "FBM 102",
-    "FILM 100",
-    "FN 170",
-    "GEOL 105L",
-    "KIN 203",
-    "KIN 270",
-    "LIB 103",
-    "MTKG 115",
-    "MUS 100",
-    "MUS 105",
-    "THEA A100",
+    "ANTH C1001",
+    "CIS A100",
+    "CIS A111",
+    "COUN A120",
+    "COUN A125",
+    "COUN A170",
+    "COS A180",
+    "FASH A102",
+    "FBM A102",
+    "FILM A100",
+    "FN A170",
+    "GEOL A105L",
+    "KIN A203",
+    "KIN A270",
+    "LIB A103",
+    "MTKG A115",
+    "MUS A100",
+    "MUS A105",
+    "THEA A100"
 }
 
 
