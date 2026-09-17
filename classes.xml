@@ -1,25 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-09-17 14:00:08 PDT">
-    <subject name="ALH - Allied Health">
-        <course name="ALH A115 - Patient Care">
-            <section status="OPEN" im="LL" crn="22384" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=22384&amp;vcoll=OC" cred="2.00" instructor="Alison  Riggio" date="10/19-12/12" weeks="8">
-                <meeting days="M W" time="11:10am - 12:40pm" location="Orange Coast LIVEONLINE" date="10/19-12/12" />
-                <meeting days="M" time="01:00pm - 04:10pm" location="Allied Health Sciences 110" date="10/19-12/12" />
-            </section>
-            <section status="OPEN" im="LL" crn="22385" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=22385&amp;vcoll=OC" cred="2.00" instructor="Alison  Riggio" date="10/19-12/12" weeks="8">
-                <meeting days="M W" time="11:10am - 12:40pm" location="Orange Coast LIVEONLINE" date="10/19-12/12" />
-                <meeting days="Th" time="01:00pm - 04:35pm" location="Allied Health Sciences 110" date="10/19-12/12" />
-            </section>
-            <section status="OPEN" im="LL" crn="23887" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=23887&amp;vcoll=OC" cred="2.00" instructor="Alison  Riggio" date="10/19-12/12" weeks="8">
-                <meeting days="M W" time="11:10am - 12:40pm" location="Orange Coast LIVEONLINE" date="10/19-12/12" />
-                <meeting days="W" time="02:10pm - 05:45pm" location="Allied Health Sciences 110" date="10/19-12/12" />
-            </section>
-            <section status="OPEN" im="LL" crn="25561" crn_link="pw_pub_sched.p_course_popup?vsub=ALH&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=25561&amp;vcoll=OC" cred="2.00" instructor="Alison  Riggio" date="10/19-12/12" weeks="8">
-                <meeting days="M W" time="11:10am - 12:40pm" location="Orange Coast LIVEONLINE" date="10/19-12/12" />
-                <meeting days="F" time="01:00pm - 04:35pm" location="Allied Health Sciences 110" date="10/19-12/12" />
-            </section>
-        </course>
-    </subject>
+<schedule term="OCC Fall 2026" current_time="2026-09-17 16:13:59 PDT">
     <subject name="CIS - Computer Information Systems">
         <course name="CIS A100 - Intro Computer Applications">
             <section status="OPEN" im="72" crn="26155" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=26155&amp;vcoll=OC" cred="3.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
@@ -98,9 +78,6 @@
             </section>
         </course>
         <course name="KIN A270 - Fitness &amp; Health">
-            <section status="OPEN" im="72" crn="20979" crn_link="pw_pub_sched.p_course_popup?vsub=KIN&amp;vcrse=A270&amp;vterm=202670&amp;vcrn=20979&amp;vcoll=OC" cred="3.00" instructor="Laura  Behr" date="10/19-12/12" weeks="8">
-                <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
-            </section>
             <section status="OPEN" im="72" crn="26180" crn_link="pw_pub_sched.p_course_popup?vsub=KIN&amp;vcrse=A270&amp;vterm=202670&amp;vcrn=26180&amp;vcoll=OC" cred="3.00" instructor="Cameron  Brown" date="10/19-12/12" weeks="8">
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
