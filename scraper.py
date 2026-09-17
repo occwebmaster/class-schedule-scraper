@@ -8,8 +8,6 @@ from playwright.async_api import async_playwright
 
 # --- FILTER WHITELISTS ---
 SUBJECT_WHITELIST = {
-    "ALH",
-    "COUN",
 }
 
 COURSE_WHITELIST = {
