@@ -1,33 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-09-17 16:13:59 PDT">
+<schedule term="OCC Fall 2026" current_time="2026-09-22 12:56:47 PDT">
     <subject name="CIS - Computer Information Systems">
         <course name="CIS A100 - Intro Computer Applications">
             <section status="OPEN" im="72" crn="26155" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=26155&amp;vcoll=OC" cred="3.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
-        <course name="CIS A111 - Intro Computer Info Sys">
-            <section status="OPEN" im="LL" crn="23047" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A111&amp;vterm=202670&amp;vcrn=23047&amp;vcoll=OC" cred="3.00" instructor="Brian  Clough" date="09/21-12/12" weeks="12">
-                <meeting days="T Th" time="06:00pm - 07:45pm" location="Math, Business, Computing Ctr 125" date="09/21-12/12" />
-                <meeting days="T Th" time="07:45pm - 09:05pm" location="Math, Business, Computing Ctr 125" date="09/21-12/12" />
-            </section>
-        </course>
-    </subject>
-    <subject name="COS - Consumer Studies">
-        <course name="COS A180 - Life Management">
-            <section status="OPEN" im="02" crn="21301" crn_link="pw_pub_sched.p_course_popup?vsub=COS&amp;vcrse=A180&amp;vterm=202670&amp;vcrn=21301&amp;vcoll=OC" cred="3.00" instructor="Sibley  Sabori" date="09/21-12/12" weeks="12">
-                <meeting days="T Th" time="09:35am - 11:50am" location="Lit &amp; Lang and Social Sciences 253" date="09/21-12/12" />
-            </section>
-        </course>
     </subject>
     <subject name="COUN - Counseling">
         <course name="COUN A120 - Career Decisn Making/Accleratd">
             <section status="OPEN" im="72" crn="23906" crn_link="pw_pub_sched.p_course_popup?vsub=COUN&amp;vcrse=A120&amp;vterm=202670&amp;vcrn=23906&amp;vcoll=OC" cred="2.00" instructor="Arleen  Palafox" date="10/19-12/12" weeks="8">
-                <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
-            </section>
-        </course>
-        <course name="COUN A125 - Job Search Strategies/Agility">
-            <section status="OPEN" im="72" crn="24043" crn_link="pw_pub_sched.p_course_popup?vsub=COUN&amp;vcrse=A125&amp;vterm=202670&amp;vcrn=24043&amp;vcoll=OC" cred="2.00" instructor="Katie  Ottoson" date="10/19-12/12" weeks="8">
                 <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
@@ -45,14 +27,6 @@
             <section status="OPEN" im="LL" crn="22711" crn_link="pw_pub_sched.p_course_popup?vsub=FASH&amp;vcrse=A102&amp;vterm=202670&amp;vcrn=22711&amp;vcoll=OC" cred="1.50" instructor="Donna  Dickens" date="10/19-12/12" weeks="8">
                 <meeting days="M W" time="01:00pm - 01:30pm" location="Consumer Sciences and Design 201" date="10/19-12/12" />
                 <meeting days="M W" time="01:30pm - 04:50pm" location="Consumer Sciences and Design 201" date="10/19-12/12" />
-            </section>
-        </course>
-    </subject>
-    <subject name="FBM - Food and Beverage Management">
-        <course name="FBM A102 - Sanitation and Safety">
-            <section status="OPEN" im="HY" crn="26158" crn_link="pw_pub_sched.p_course_popup?vsub=FBM&amp;vcrse=A102&amp;vterm=202670&amp;vcrn=26158&amp;vcoll=OC" cred="2.00" instructor="Eric  Cohen" date="09/21-11/09" weeks="8">
-                <meeting days="" time="4.2 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="09/21-11/09" />
-                <meeting days="M" time="01:00pm - 03:50pm" location="Lit &amp; Lang and Social Sciences 103" date="11/09-11/09" />
             </section>
         </course>
     </subject>
@@ -78,6 +52,9 @@
             </section>
         </course>
         <course name="KIN A270 - Fitness &amp; Health">
+            <section status="OPEN" im="72" crn="20979" crn_link="pw_pub_sched.p_course_popup?vsub=KIN&amp;vcrse=A270&amp;vterm=202670&amp;vcrn=20979&amp;vcoll=OC" cred="3.00" instructor="Laura  Behr" date="10/19-12/12" weeks="8">
+                <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
             <section status="OPEN" im="72" crn="26180" crn_link="pw_pub_sched.p_course_popup?vsub=KIN&amp;vcrse=A270&amp;vterm=202670&amp;vcrn=26180&amp;vcoll=OC" cred="3.00" instructor="Cameron  Brown" date="10/19-12/12" weeks="8">
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
@@ -97,7 +74,7 @@
     </subject>
     <subject name="THEA - Theater Arts">
         <course name="THEA A100 - Introduction to Theatre">
-            <section status="OPEN" im="71" crn="26198" crn_link="pw_pub_sched.p_course_popup?vsub=THEA&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=26198&amp;vcoll=OC" cred="3.00" instructor="William  Mittler" date="10/19-12/12" weeks="8">
+            <section status="OPEN" im="71" crn="26198" crn_link="pw_pub_sched.p_course_popup?vsub=THEA&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=26198&amp;vcoll=OC" cred="3.00" instructor="Bill  Mittler" date="10/19-12/12" weeks="8">
                 <meeting days="M W" time="06:00pm - 09:20pm" location="Orange Coast LIVEONLINE" date="10/19-12/12" />
             </section>
         </course>
