@@ -1,13 +1,64 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-09-29 15:10:57 PDT">
+<schedule term="OCC Fall 2026" current_time="2026-09-29 15:30:55 PDT">
+    <subject name="APT - Aviation Pilot Training">
+        <course name="APT A151 - Unmanned Aircraft Systems Lab">
+            <section status="OPEN" im="04" crn="25891" crn_link="pw_pub_sched.p_course_popup?vsub=APT&amp;vcrse=A151&amp;vterm=202670&amp;vcrn=25891&amp;vcoll=OC" cred="1.00" instructor="Joel  Jones" date="10/19-12/12" weeks="8">
+                <meeting days="S" time="10:00am - 05:25pm" location="OCC Offsite COMM SITE" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="ARCH - Architecture">
+        <course name="ARCH A101 - Intro Environ Sustainability">
+            <section status="OPEN" im="72" crn="26112" crn_link="pw_pub_sched.p_course_popup?vsub=ARCH&amp;vcrse=A101&amp;vterm=202670&amp;vcrn=26112&amp;vcoll=OC" cred="1.00" instructor="David  Molinaro" date="10/19-12/12" weeks="8">
+                <meeting days="" time="2.3 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="BUS - Business">
+        <course name="BUS A234 - Excel 2">
+            <section status="OPEN" im="72" crn="25002" crn_link="pw_pub_sched.p_course_popup?vsub=BUS&amp;vcrse=A234&amp;vterm=202670&amp;vcrn=25002&amp;vcoll=OC" cred="2.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
+                <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="CA - Culinary Arts">
+        <course name="CA A265 - Ala Minute Cont Cooking">
+            <section status="OPEN" im="04" crn="24487" crn_link="pw_pub_sched.p_course_popup?vsub=CA&amp;vcrse=A265&amp;vterm=202670&amp;vcrn=24487&amp;vcoll=OC" cred="2.00" instructor="Ali  Flecky" date="10/19-12/12" weeks="8">
+                <meeting days="Th" time="09:30am - 04:55pm" location="OCC College Center 250D" date="10/19-12/12" />
+                <meeting days="F" time="09:30am - 05:00pm" location="OCC College Center 250D" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
     <subject name="CIS - Computer Information Systems">
         <course name="CIS A100 - Intro Computer Applications">
             <section status="OPEN" im="72" crn="26155" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=26155&amp;vcoll=OC" cred="3.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
+        <course name="CIS A234 - Excel 2">
+            <section status="OPEN" im="72" crn="20831" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A234&amp;vterm=202670&amp;vcrn=20831&amp;vcoll=OC" cred="2.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
+                <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
+        <course name="CIS A234H - Excel 2 Honors">
+            <section status="OPEN" im="72" crn="24228" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A234H&amp;vterm=202670&amp;vcrn=24228&amp;vcoll=OC" cred="2.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
+                <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="CNST - Construction Technology">
+        <course name="CNST A189 - Blueprint Reading">
+            <section status="OPEN" im="02" crn="26171" crn_link="pw_pub_sched.p_course_popup?vsub=CNST&amp;vcrse=A189&amp;vterm=202670&amp;vcrn=26171&amp;vcoll=OC" cred="1.50" instructor="Darrell  Urbien" date="10/19-12/12" weeks="8">
+                <meeting days="M" time="06:35pm - 09:45pm" location="Technology Center 212" date="10/19-12/12" />
+            </section>
+        </course>
     </subject>
     <subject name="COUN - Counseling">
+        <course name="COUN A100 - Introduction to College">
+            <section status="OPEN" im="72" crn="20842" crn_link="pw_pub_sched.p_course_popup?vsub=COUN&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=20842&amp;vcoll=OC" cred="1.00" instructor="Arlene  Vargas" date="10/19-12/12" weeks="8">
+                <meeting days="" time="2.3 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
         <course name="COUN A120 - Career Decisn Making/Accleratd">
             <section status="OPEN" im="72" crn="23906" crn_link="pw_pub_sched.p_course_popup?vsub=COUN&amp;vcrse=A120&amp;vterm=202670&amp;vcrn=23906&amp;vcoll=OC" cred="2.00" instructor="Arleen  Palafox" date="10/19-12/12" weeks="8">
                 <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
@@ -22,11 +73,32 @@
             </section>
         </course>
     </subject>
+    <subject name="DANC - Dance">
+        <course name="DANC A229 - Pilates Methodology 2">
+            <section status="OPEN" im="02" crn="25579" crn_link="pw_pub_sched.p_course_popup?vsub=DANC&amp;vcrse=A229&amp;vterm=202670&amp;vcrn=25579&amp;vcoll=OC" cred="2.00" instructor="Delyer  Coffman" date="10/19-12/12" weeks="8">
+                <meeting days="T Th" time="08:55am - 11:05am" location="C &amp; L 104" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="DMAD - Digital Media Arts / Design">
+        <course name="DMAD A202 - Design Industry Preparation">
+            <section status="OPEN" im="72" crn="26177" crn_link="pw_pub_sched.p_course_popup?vsub=DMAD&amp;vcrse=A202&amp;vterm=202670&amp;vcrn=26177&amp;vcoll=OC" cred="2.00" instructor="Michelle  Don Vito" date="10/19-12/12" weeks="8">
+                <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+                <meeting days="" time="2.25 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
     <subject name="FASH - Fashion">
         <course name="FASH A102 - Industrial Sewing Techniques">
             <section status="OPEN" im="LL" crn="22711" crn_link="pw_pub_sched.p_course_popup?vsub=FASH&amp;vcrse=A102&amp;vterm=202670&amp;vcrn=22711&amp;vcoll=OC" cred="1.50" instructor="Donna  Dickens" date="10/19-12/12" weeks="8">
                 <meeting days="M W" time="01:00pm - 01:30pm" location="Consumer Sciences and Design 201" date="10/19-12/12" />
                 <meeting days="M W" time="01:30pm - 04:50pm" location="Consumer Sciences and Design 201" date="10/19-12/12" />
+            </section>
+        </course>
+        <course name="FASH A266 - Computerized Pattrn Sys">
+            <section status="OPEN" im="LL" crn="22363" crn_link="pw_pub_sched.p_course_popup?vsub=FASH&amp;vcrse=A266&amp;vterm=202670&amp;vcrn=22363&amp;vcoll=OC" cred="2.00" instructor="Mary  Lombard" date="10/19-12/12" weeks="8">
+                <meeting days="T Th" time="06:00pm - 07:30pm" location="Allied Health Sciences 102" date="10/19-12/12" />
+                <meeting days="T Th" time="07:40pm - 09:10pm" location="Allied Health Sciences 102" date="10/19-12/12" />
             </section>
         </course>
     </subject>
@@ -57,10 +129,30 @@
             </section>
         </course>
     </subject>
+    <subject name="MARA - Marine Activities">
+        <course name="MARA A157 - Radar Observer">
+            <section status="OPEN" im="02" crn="22303" crn_link="pw_pub_sched.p_course_popup?vsub=MARA&amp;vcrse=A157&amp;vterm=202670&amp;vcrn=22303&amp;vcoll=OC" cred="2.00" instructor="Ron  Mealey" date="10/19-12/12" weeks="8">
+                <meeting days="M" time="09:00am - 01:50pm" location="OCC Offsite PMTC MT205" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
     <subject name="MUS - Music">
         <course name="MUS A100 - Hist &amp; Appr of West Clas Music">
             <section status="OPEN" im="02" crn="22740" crn_link="pw_pub_sched.p_course_popup?vsub=MUS&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=22740&amp;vcoll=OC" cred="3.00" instructor="Ricardo  Soto" date="10/19-12/12" weeks="8">
                 <meeting days="M W" time="09:15am - 12:25pm" location="Fine Arts 119" date="10/19-12/12" />
+            </section>
+        </course>
+        <course name="MUS A115 - Fundamentals of Music">
+            <section status="OPEN" im="02" crn="24652" crn_link="pw_pub_sched.p_course_popup?vsub=MUS&amp;vcrse=A115&amp;vterm=202670&amp;vcrn=24652&amp;vcoll=OC" cred="3.00" instructor="Nadia  Smelser" date="10/19-12/12" weeks="8">
+                <meeting days="T Th" time="09:00am - 12:20pm" location="Music 101" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="SPAN - Spanish">
+        <course name="SPAN A185 - Elementary Spanish 2">
+            <section status="OPEN" im="HY" crn="20164" crn_link="pw_pub_sched.p_course_popup?vsub=SPAN&amp;vcrse=A185&amp;vterm=202670&amp;vcrn=20164&amp;vcoll=OC" cred="5.00" instructor="Denise  Cabanel-Bleuer" date="10/19-12/12" weeks="8">
+                <meeting days="" time="6.35 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+                <meeting days="T Th" time="11:10am - 01:40pm" location="Lit &amp; Lang and Social Sciences 301" date="10/19-12/12" />
             </section>
         </course>
     </subject>
