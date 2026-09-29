@@ -12,13 +12,24 @@ SUBJECT_WHITELIST = {
 
 COURSE_WHITELIST = {
     "ANTH C1001",
+    "APT A151",
+    "ARCH A101",
+    "BUS A234",
+    "CA A265",
     "CIS A100",
     "CIS A111",
+    "CIS A234",
+    "CIS A234H",
+    "CNST A189",
+    "COUN A100",
     "COUN A120",
     "COUN A125",
     "COUN A170",
     "COS A180",
+    "DANC A229",
+    "DMAD A202",
     "FASH A102",
+    "FASH A266",
     "FBM A102",
     "FILM A100",
     "FN A170",
@@ -26,9 +37,12 @@ COURSE_WHITELIST = {
     "KIN A203",
     "KIN A270",
     "LIB A103",
+    "MARA A157",
     "MTKG A115",
     "MUS A100",
     "MUS A105",
+    "MUS A115",
+    "SPAN A185",
     "THEA A100"
 }
 
