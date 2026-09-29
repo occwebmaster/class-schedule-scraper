@@ -32,6 +32,7 @@ COURSE_WHITELIST = {
     "FASH A266",
     "FBM A102",
     "FILM A100",
+    "FN A100",
     "FN A170",
     "GEOL A105L",
     "KIN A203",
@@ -42,6 +43,9 @@ COURSE_WHITELIST = {
     "MUS A100",
     "MUS A105",
     "MUS A115",
+    "PHOT A123",
+    "PSYC C1000",
+    "SPAN A180",
     "SPAN A185",
     "THEA A100"
 }
