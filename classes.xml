@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-09-29 15:30:55 PDT">
+<schedule term="OCC Fall 2026" current_time="2026-09-29 18:12:12 PDT">
     <subject name="APT - Aviation Pilot Training">
         <course name="APT A151 - Unmanned Aircraft Systems Lab">
             <section status="OPEN" im="04" crn="25891" crn_link="pw_pub_sched.p_course_popup?vsub=APT&amp;vcrse=A151&amp;vterm=202670&amp;vcrn=25891&amp;vcoll=OC" cred="1.00" instructor="Joel  Jones" date="10/19-12/12" weeks="8">
@@ -30,11 +30,6 @@
         </course>
     </subject>
     <subject name="CIS - Computer Information Systems">
-        <course name="CIS A100 - Intro Computer Applications">
-            <section status="OPEN" im="72" crn="26155" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=26155&amp;vcoll=OC" cred="3.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
-                <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
-            </section>
-        </course>
         <course name="CIS A234 - Excel 2">
             <section status="OPEN" im="72" crn="20831" crn_link="pw_pub_sched.p_course_popup?vsub=CIS&amp;vcrse=A234&amp;vterm=202670&amp;vcrn=20831&amp;vcoll=OC" cred="2.00" instructor="Maryann  Watson" date="10/19-12/12" weeks="8">
                 <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
@@ -54,16 +49,6 @@
         </course>
     </subject>
     <subject name="COUN - Counseling">
-        <course name="COUN A100 - Introduction to College">
-            <section status="OPEN" im="72" crn="20842" crn_link="pw_pub_sched.p_course_popup?vsub=COUN&amp;vcrse=A100&amp;vterm=202670&amp;vcrn=20842&amp;vcoll=OC" cred="1.00" instructor="Arlene  Vargas" date="10/19-12/12" weeks="8">
-                <meeting days="" time="2.3 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
-            </section>
-        </course>
-        <course name="COUN A120 - Career Decisn Making/Accleratd">
-            <section status="OPEN" im="72" crn="23906" crn_link="pw_pub_sched.p_course_popup?vsub=COUN&amp;vcrse=A120&amp;vterm=202670&amp;vcrn=23906&amp;vcoll=OC" cred="2.00" instructor="Arleen  Palafox" date="10/19-12/12" weeks="8">
-                <meeting days="" time="4.5 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
-            </section>
-        </course>
         <course name="COUN A170 - College Major Search">
             <section status="OPEN" im="72" crn="20698" crn_link="pw_pub_sched.p_course_popup?vsub=COUN&amp;vcrse=A170&amp;vterm=202670&amp;vcrn=20698&amp;vcoll=OC" cred="1.00" instructor="Yvette  Nguyen" date="10/19-12/12" weeks="8">
                 <meeting days="" time="2.3 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
