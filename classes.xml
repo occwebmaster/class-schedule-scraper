@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<schedule term="OCC Fall 2026" current_time="2026-10-06 17:13:05 PDT">
+<schedule term="OCC Fall 2026" current_time="2026-10-06 17:14:51 PDT">
     <subject name="APT - Aviation Pilot Training">
         <course name="APT A151 - Unmanned Aircraft Systems Lab">
             <section status="OPEN" im="04" crn="25891" crn_link="pw_pub_sched.p_course_popup?vsub=APT&amp;vcrse=A151&amp;vterm=202670&amp;vcrn=25891&amp;vcoll=OC" cred="1.00" instructor="Joel  Jones" date="10/19-12/12" weeks="8">
@@ -88,6 +88,13 @@
         <course name="KIN A270 - Fitness &amp; Health">
             <section status="OPEN" im="72" crn="26180" crn_link="pw_pub_sched.p_course_popup?vsub=KIN&amp;vcrse=A270&amp;vterm=202670&amp;vcrn=26180&amp;vcoll=OC" cred="3.00" instructor="Cameron  Brown" date="10/19-12/12" weeks="8">
                 <meeting days="" time="6.8 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
+            </section>
+        </course>
+    </subject>
+    <subject name="LIBR - Library">
+        <course name="LIBR A103 - College Research Skills">
+            <section status="OPEN" im="72" crn="23044" crn_link="pw_pub_sched.p_course_popup?vsub=LIBR&amp;vcrse=A103&amp;vterm=202670&amp;vcrn=23044&amp;vcoll=OC" cred="1.00" instructor="Sukena  Taibjee" date="10/19-12/12" weeks="8">
+                <meeting days="" time="2.3 Hrs/Wk arr in addition to any scheduled hrs if applicable" location="Orange Coast ONLINE" date="10/19-12/12" />
             </section>
         </course>
     </subject>
