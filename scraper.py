@@ -37,7 +37,7 @@ COURSE_WHITELIST = {
     "GEOL A105L",
     "KIN A203",
     "KIN A270",
-    "LIB A103",
+    "LIBR A103",
     "MARA A157",
     "MTKG A115",
     "MUS A100",
